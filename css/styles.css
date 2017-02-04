@@ -7,7 +7,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  background-image: url("/img/bg.jpg");
+  background: #C40234 url("/img/bg.jpg");
 }
 
 a {

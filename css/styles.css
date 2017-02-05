@@ -65,6 +65,11 @@ section {
   padding: 1rem;
 }
 
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
 .card {
   background-color: rgba(0, 0, 0, .54);
   margin: 1rem;

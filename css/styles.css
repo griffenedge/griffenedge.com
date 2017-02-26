@@ -93,7 +93,7 @@ footer {
   text-decoration: underline;
 }
 
-.card h2 {
+.card-heading {
   position: absolute;
   bottom: .5rem;
   left: .5rem;

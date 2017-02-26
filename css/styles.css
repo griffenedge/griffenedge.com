@@ -1,41 +1,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   color: #FFF;
-}
-
-@-webkit-keyframes background {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@keyframes background {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   background: -webkit-linear-gradient(310deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
   background: linear-gradient(140deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
-  background-size: 110% 110%;
-  -webkit-animation: background 5s ease infinite;
-  animation: background 5s ease infinite;
 }
 
 a {
@@ -58,6 +30,9 @@ nav {
   white-space: nowrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav-items {
@@ -131,7 +106,19 @@ footer {
   position: absolute;
   top: 25%;
   left: 25%;
-  padding: .5rem;
+  padding: 1rem;
+}
+
+.valign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .omg {
@@ -166,13 +153,6 @@ footer {
   box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #673AB7;
 }
 
-.valign {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .dropdown {
   display: inline-block;
 }
@@ -187,7 +167,6 @@ footer {
 .dropdown-content a {
   font-size: 1rem;
   padding: 1rem;
-  text-decoration: none;
   display: block;
   -webkit-transition: all ease .2s;
   transition: all ease .2s;

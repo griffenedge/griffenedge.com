@@ -62,13 +62,6 @@ header {
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
   -webkit-animation: fadeIn 1s ease;
   animation: fadeIn 1s ease;
   margin-right: auto;
@@ -76,6 +69,16 @@ main {
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 footer {
@@ -102,6 +105,11 @@ footer {
 .display1 {
   font-size: 2rem;
   padding: 2rem;
+}
+
+.display2 {
+  font-size: 1.1rem;
+  padding: 1rem
 }
 
 .active {
@@ -194,8 +202,17 @@ footer {
   box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #9C27B0;
 }
 
+.backing {
+  background-color: #FFF;
+  border-radius: 1rem;
+  padding: .5rem
+}
+
 .dropdown {
   display: inline-block;
+  font-size: 1rem;
+  vertical-align: middle;
+  margin: .5rem;
 }
 
 .dropdown-content {
@@ -249,7 +266,6 @@ footer {
   }
   .display1 {
     font-size: 3rem;
-    padding: 3rem;
   }
 }
 

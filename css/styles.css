@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   color: #FFF;
@@ -6,8 +7,8 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  background: -webkit-linear-gradient(310deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
-  background: linear-gradient(140deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
+  background: #000;
+  background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
 }
 
 a {
@@ -21,7 +22,7 @@ a:hover {
 
 nav {
   min-height: 4rem;
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +35,7 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: .5rem;
 }
 
 .nav-items {
@@ -41,7 +43,7 @@ nav {
   overflow-x: auto;
 }
 
-.nav-items a {
+.nav-items .nav-item {
   display: inline-block;
   padding: 1rem;
   font-weight: bold;
@@ -104,12 +106,12 @@ footer {
 
 .display1 {
   font-size: 2rem;
-  padding: 2rem;
+  margin: 2rem 0;
 }
 
 .display2 {
-  font-size: 1.1rem;
-  padding: 1rem
+  font-size: 1.25rem;
+  margin: 1rem 0;
 }
 
 .active {
@@ -157,49 +159,65 @@ footer {
   height: auto;
 }
 
-.site-screenshot {
-  display: block;
-  max-width: 40rem;
-}
-
 .ohmygarden {
   background-color: #00E676;
+}
+
+.card-ohmygarden {
+  -webkit-box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #00E676;
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #00E676;
+}
+
+.ohmygarden-gradient {
+  background: linear-gradient(-45deg, #004D40, #1B5E20, #33691E) no-repeat center center fixed;
 }
 
 .canterburytheatreguild {
   background-color: #007597;
 }
 
+.card-canterburytheatreguild {
+  -webkit-box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #007597;
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #007597;
+}
+
+.canterburytheatreguild-gradient {
+  background: linear-gradient(-45deg, #0D47A1, #01579B, #006064) no-repeat center center fixed;
+}
+
 .ipt {
   background-color: #d14200;
+}
+
+.card-ipt {
+  -webkit-box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #d14200;
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #d14200;
 }
 
 .prioritab {
   background-color: #222222;
 }
 
+.card-prioritab {
+  -webkit-box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #222222;
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #222222;
+}
+
+.prioritab-gradient {
+  background: linear-gradient(135deg, #616161, #424242, #212121) no-repeat center center fixed;
+}
+
 .steelmagnolias {
   background-color: #9C27B0;
 }
 
-.card-canterburytheatreguild {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #007597;
-}
-
-.card-ohmygarden {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #00E676;
-}
-
-.card-ipt {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #d14200;
-}
-
-.card-prioritab {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #222222;
-}
-
 .card-steelmagnolias {
+  -webkit-box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #9C27B0;
   box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #9C27B0;
+}
+
+.steelmagnolias-gradient {
+  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
 }
 
 .backing {
@@ -210,15 +228,12 @@ footer {
 
 .dropdown {
   display: inline-block;
-  font-size: 1rem;
-  vertical-align: middle;
-  margin: .5rem;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, .54);
+  background-color: rgba(0, 0, 0, .87);
   z-index: 1;
 }
 
@@ -231,27 +246,18 @@ footer {
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(0, 0, 0, .87);
+  background-color: #000;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.social .fa {
-  padding: .5rem;
-  font-size: 2rem;
-  border-radius: 50%;
-}
-
-.social .fa-github {
-  background: #3B5998;
-  color: white;
-}
-
-.social .fa-envelope {
-  background: #55ACEE;
-  color: white;
+.dropdown-arrow {
+  margin: .5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  text-decoration: none;
 }
 
 @media (min-width: 576px) {

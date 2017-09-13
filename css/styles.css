@@ -8,7 +8,6 @@
 body {
   font-family: "PT Sans", sans-serif;
   background: #000;
-  background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
 }
 
 a {
@@ -157,6 +156,10 @@ footer {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.default-gradient {
+  background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
 }
 
 .ohmygarden {

@@ -7,7 +7,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  background: #000;
+  background-color: #000;
 }
 
 a {
@@ -63,8 +63,8 @@ header {
 }
 
 main {
-  -webkit-animation: fadeIn 1s ease;
-  animation: fadeIn 1s ease;
+  -webkit-animation: fadeIn .3s ease;
+  animation: fadeIn .3s ease;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -160,6 +160,7 @@ footer {
 
 .default-gradient {
   background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
+  background-color: #000;
 }
 
 .ohmygarden {
@@ -173,6 +174,7 @@ footer {
 
 .ohmygarden-gradient {
   background: linear-gradient(-45deg, #004D40, #1B5E20, #33691E) no-repeat center center fixed;
+  background-color: #000;
 }
 
 .canterburytheatreguild {
@@ -186,6 +188,7 @@ footer {
 
 .canterburytheatreguild-gradient {
   background: linear-gradient(-45deg, #0D47A1, #01579B, #006064) no-repeat center center fixed;
+  background-color: #000;
 }
 
 .ipt {
@@ -208,6 +211,7 @@ footer {
 
 .prioritab-gradient {
   background: linear-gradient(135deg, #616161, #424242, #212121) no-repeat center center fixed;
+  background-color: #000;
 }
 
 .steelmagnolias {
@@ -221,6 +225,7 @@ footer {
 
 .steelmagnolias-gradient {
   background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
+  background-color: #000;
 }
 
 .backing {

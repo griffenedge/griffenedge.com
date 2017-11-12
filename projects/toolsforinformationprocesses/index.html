@@ -4,43 +4,50 @@
 <head>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta charset="UTF-8">
-  <title>Tools for Information Processes | Griffen Edge - Designer</title>
+  <title>Tools for Information Processes | Griffen Edge</title>
   <meta content="Hi, my name is Griffen Edge and I like to design." name="description">
   <link rel="icon" type="image/png" href="/favicon.png">
-  <meta name="theme-color" content="#000000">
-  <link href="/css/normalize.min.css" rel="stylesheet" type="text/css">
-  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+  <meta name="theme-color" content="#000">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 </head>
 
-<body class="default-gradient">
-  <nav>
-    <a href="/"><img class="nav-logo" src="/img/logo.svg" alt="EDGE" style="height:4rem;"></a>
-    <div class="nav-items">
-      <a href="/" class="nav-item">Home</a>
-      <div class="dropdown">
-        <a src="#" class="nav-item active">Projects<span class="dropdown dropdown-arrow">&dtrif;</span></a>
-        <div class="dropdown-content">
-          <a href="/projects/canterburytheatreguild/">Canterbury Theatre Guild</a>
-          <a href="/projects/canterburytheatreguild/steelmagnolias/">Steel Magnolias</a>
-          <a href="/projects/ohmygarden/">Oh My Garden</a>
-          <a href="/projects/toolsforinformationprocesses/" class="active">Tools for Information Processes</a>
-          <a href="/projects/prioritab/">Proritab</a>
-          <a href="/projects/portfolio/">My Portfolio</a>
+<body class="ipt-gradient text-light">
+  <nav class="navbar navbar-expand navbar-dark justify-content-center flex-column flex-sm-row bd-navbar bg-black navbar-sticky">
+    <a class="navbar-brand" href="/"><img src="/img/logo.svg" alt="EDGE" class="navbar-brand-img"></a>
+    <div class="navbar-nav">
+      <div class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <div class="dropdown">
+            <a class="dropdown-item" href="/projects/ohmygarden/">Oh My Garden</a>
+            <a class="dropdown-item" href="/projects/prioritab/">Prioritab</a>
+            <a class="dropdown-item" href="/projects/sydneysecondarycollege/">Sydney Secondary College</a>
+            <a class="dropdown-item" href="/projects/canterburytheatreguild/">Canterbury Theatre Guild</a>
+            <a class="dropdown-item" href="/projects/canterburytheatreguild/littlemermaid/">The Little Mermaid</a>
+            <a class="dropdown-item" href="/projects/canterburytheatreguild/avenueq/">Avenue Q</a>
+            <a class="dropdown-item" href="/projects/canterburytheatreguild/steelmagnolias/">Steel Magnolias</a>
+            <a class="dropdown-item active" href="/projects/toolsforinformationprocesses/">Tools for Information Processes <span class="sr-only">(current)</span></a>
+          </div>
         </div>
       </div>
+      <a class="nav-item nav-link" href="/about/">About</a>
     </div>
   </nav>
-  <main>
-    <h1 class="display1"><a href="http://users.tpg.com.au/nevgoodyer/IPT/BEG/"> Tools for Information Processes</a></h1>
-    <p class="display2">A school project designed to assist HSC Information Processes and Technology students in learning about the tools for information processes.</p>
-    <img class="img-fluid" src="screenshot_toolsforinformationprocesses_1280x646.png" srcset="screenshot_toolsforinformationprocesses_1280x646@2x.png 2x">
+
+  <main class="container">
+    <h1><a href="http://users.tpg.com.au/nevgoodyer/IPT/BEG/"> Tools for Information Processes</a></h1>
+    <p>A school project designed to assist HSC Information Processes and Technology students in learning about the tools for information processes.</p>
+    <img class="d-block w-100" src="screenshot_toolsforinformationprocesses_1280x646.png" srcset="screenshot_toolsforinformationprocesses_1280x646@2x.png 2x" alt="First slide">
+
   </main>
-  <footer>
-    &copy;2017 Griffen Edge
-  </footer>
+  <footer class="text-center p-3">&copy; 2017 Griffen Edge</footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="/js/post.js"></script>
+  <script src="/scripts/post.js"></script>
 </body>
 
 </html>

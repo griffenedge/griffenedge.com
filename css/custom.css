@@ -1,0 +1,190 @@
+body {
+  font-family: "PT Sans", system-ui, sans-serif;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.navbar-brand-img {
+  height: 4rem;
+}
+
+.nav-item {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.project {
+  margin: 1rem;
+  height: 17rem;
+  width: 17rem;
+  padding: .5rem;
+  display: block;
+  position: relative;
+  transition: all ease .2s;
+}
+
+.project:hover {
+  background-color: rgba(255, 255, 255, .01);
+  transform: scale(1.075);
+}
+
+.project-heading {
+  position: absolute;
+  bottom: .5rem;
+  left: .5rem;
+  right: .5rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.circle {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  padding: 1rem;
+}
+
+.circle img {
+  max-width: 100%;
+}
+
+.ohmygarden {
+  background-color: #28a745;
+}
+
+.project-ohmygarden {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #28a745, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.ohmygarden-gradient {
+  background: linear-gradient(-45deg, #004D40, #1B5E20, #33691E) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.canterburytheatreguild {
+  background-color: #007597;
+}
+
+.project-canterburytheatreguild {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #007597, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.canterburytheatreguild-gradient {
+  background: linear-gradient(-45deg, #0D47A1, #01579B, #006064) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.ipt {
+  background-color: #d14200;
+}
+
+.project-ipt {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #d14200, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.ipt-gradient {
+    background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
+    background-color: #000;
+}
+
+.prioritab {
+  background-color: #222222;
+}
+
+.project-prioritab {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #222222, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.prioritab-gradient {
+  background: linear-gradient(135deg, #616161, #424242, #212121) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.steelmagnolias {
+  background-color: #9C27B0;
+}
+
+.project-steelmagnolias {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #9C27B0, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.steelmagnolias-gradient {
+  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.littlemermaid {
+  background-color: #00778e;
+}
+
+.project-littlemermaid {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #00778e, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.littlemermaid-gradient {
+  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.avenueq {
+  background-color: #F06E31;
+}
+
+.project-avenueq {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #F06E31, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.avenueq-gradient {
+  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.ssc {
+  background-color: #233e99;
+}
+
+.ssc-gradient {
+  background: linear-gradient(135deg, #233e99, #233e99) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-ssc {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #233e99, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.valign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (min-width: 576px) {
+.navbar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+  .navbar {
+      box-shadow: 0 0 .25rem .25rem rgba(0, 0, 0, 0.25);
+  }
+}

@@ -186,8 +186,8 @@ h1 {
   background-color: #EE374D;
 }
 
-.9to5-gradient {
-  background: linear-gradient(135deg, #01579B, #0D47A1, #1A237E) no-repeat center center fixed;
+.nineto5-gradient {
+  background: linear-gradient(135deg, #E65100, #B71C1C) no-repeat center center fixed;
   background-color: #000;
 }
 

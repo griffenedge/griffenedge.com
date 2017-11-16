@@ -14,6 +14,10 @@ a:hover {
   color: #fff;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 .bg-black {
   background-color: #000;
 }
@@ -38,8 +42,16 @@ a:hover {
 }
 
 .project:hover {
-  background-color: rgba(255, 255, 255, .01);
+  background-color: rgba(255, 255, 255, .13);
   transform: scale(1.075);
+}
+
+.project-dark {
+  background-color: rgba(0, 0, 0, .54);
+}
+
+.project-dark:hover {
+  background-color: rgba(0, 0, 0, .87);
 }
 
 .project-heading {
@@ -101,8 +113,8 @@ a:hover {
 }
 
 .ipt-gradient {
-    background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
-    background-color: #000;
+  background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
+  background-color: #000;
 }
 
 .prioritab {
@@ -140,7 +152,7 @@ a:hover {
 }
 
 .littlemermaid-gradient {
-  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
+  background: linear-gradient(135deg, #01579B, #006064, #004D40) no-repeat center center fixed;
   background-color: #000;
 }
 
@@ -153,7 +165,7 @@ a:hover {
 }
 
 .avenueq-gradient {
-  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
+  background: linear-gradient(135deg, #E65100, #BF360C, #B71C1C) no-repeat center center fixed;
   background-color: #000;
 }
 
@@ -162,12 +174,25 @@ a:hover {
 }
 
 .ssc-gradient {
-  background: linear-gradient(135deg, #233e99, #233e99) no-repeat center center fixed;
+  background: linear-gradient(135deg, #01579B, #0D47A1, #1A237E) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-ssc {
   box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #233e99, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.nineto5 {
+  background-color: #EE374D;
+}
+
+.9to5-gradient {
+  background: linear-gradient(135deg, #01579B, #0D47A1, #1A237E) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-9to5 {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #EE374D, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .valign {
@@ -178,13 +203,13 @@ a:hover {
 }
 
 @media (min-width: 576px) {
-.navbar-sticky {
+  .navbar-sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
-}
+  }
   .navbar {
-      box-shadow: 0 0 .25rem .25rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 .25rem .25rem rgba(0, 0, 0, 0.25);
   }
 }

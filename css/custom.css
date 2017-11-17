@@ -88,6 +88,10 @@ footer {
   padding: 1rem;
 }
 
+.h-22rem {
+  max-height: 22rem;
+}
+
 .circle img {
   max-width: 100%;
 }

@@ -6,6 +6,3 @@ WebFont.load({
 jQuery(document.links).filter(function() {
 	return this.hostname != window.location.hostname;
 }).attr('target', '_blank');
-var otherWindow = window.open();
-otherWindow.opener = null;
-otherWindow.location = url;

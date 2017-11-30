@@ -51,7 +51,7 @@ footer {
 
 main,
 footer {
-  animation: fadeIn .1s ease;
+  animation: fadeIn .2s ease;
 }
 
 @keyframes fadeIn {

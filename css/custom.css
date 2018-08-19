@@ -1,6 +1,22 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: "PT Sans", system-ui, sans-serif;
-  background-color: #000;
+  margin-bottom: 5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 a {
@@ -14,16 +30,12 @@ a:hover {
   color: #fff;
 }
 
-h1 {
-  font-weight: bold;
-}
-
 .bg-black {
   background-color: #000;
 }
 
-.navbar-brand-img {
-  height: 4rem;
+.navbar {
+  margin-bottom: 1rem;
 }
 
 .nav-item {
@@ -31,24 +43,11 @@ h1 {
   font-size: 2rem;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.navbar-brand-img {
+  height: 4rem;
 }
 
-body {
-  margin-bottom: 5rem;
-  /* Margin bottom by footer height */
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5rem;
-  /* Set the fixed height of the footer here */
-}
-
+.animation-fadein,
 main,
 footer {
   animation: fadeIn .2s ease;
@@ -68,14 +67,13 @@ footer {
   height: 17rem;
   width: 17rem;
   padding: .5rem;
-  display: block;
   position: relative;
   transition: all ease .2s;
 }
 
 .project:hover {
   background-color: rgba(255, 255, 255, .13);
-  transform: scale(1.075);
+  transform: scale(1.06);
 }
 
 .project-dark {
@@ -106,131 +104,6 @@ footer {
   padding: 1rem;
 }
 
-.h-22rem {
-  max-height: 22rem;
-}
-
-.circle img {
-  max-width: 100%;
-}
-
-.ohmygarden {
-  background-color: #28a745;
-}
-
-.project-ohmygarden {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #28a745, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.ohmygarden-gradient {
-  background: linear-gradient(-45deg, #004D40, #1B5E20, #33691E) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.canterburytheatreguild {
-  background-color: #007597;
-}
-
-.project-canterburytheatreguild {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #007597, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.canterburytheatreguild-gradient {
-  background: linear-gradient(-45deg, #0D47A1, #01579B, #006064) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.ipt {
-  background-color: #d14200;
-}
-
-.project-ipt {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #d14200, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.ipt-gradient {
-  background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.prioritab {
-  background-color: #222222;
-}
-
-.project-prioritab {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #222222, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.prioritab-gradient {
-  background: linear-gradient(135deg, #616161, #424242, #212121) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.steelmagnolias {
-  background-color: #9C27B0;
-}
-
-.project-steelmagnolias {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #9C27B0, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.steelmagnolias-gradient {
-  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.littlemermaid {
-  background-color: #00778e;
-}
-
-.project-littlemermaid {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #00778e, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.littlemermaid-gradient {
-  background: linear-gradient(135deg, #01579B, #006064, #004D40) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.avenueq {
-  background-color: #F06E31;
-}
-
-.project-avenueq {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #F06E31, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.avenueq-gradient {
-  background: linear-gradient(135deg, #E65100, #BF360C, #B71C1C) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.ssc {
-  background-color: #233e99;
-}
-
-.ssc-gradient {
-  background: linear-gradient(135deg, #01579B, #0D47A1, #1A237E) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-ssc {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #233e99, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
-.nineto5 {
-  background-color: #EE374D;
-}
-
-.nineto5-gradient {
-  background: linear-gradient(135deg, #E65100, #B71C1C) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-9to5 {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #EE374D, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
-}
-
 .valign {
   position: relative;
   top: 50%;
@@ -238,14 +111,119 @@ footer {
   transform: translateY(-50%);
 }
 
-@media (min-width: 576px) {
-  .navbar-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-  .navbar {
-    box-shadow: 0 0 .25rem .25rem rgba(0, 0, 0, 0.25);
-  }
+.bg-ohmygarden {
+  background-color: #28a745;
+}
+
+.bg-gradient-ohmygarden {
+  background: linear-gradient(-45deg, #004D40, #1B5E20, #33691E) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-ohmygarden {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #28a745, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-canterburytheatreguild {
+  background-color: #007597;
+}
+
+.bg-gradient-canterburytheatreguild {
+  background: linear-gradient(-45deg, #0D47A1, #01579B, #006064) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-canterburytheatreguild {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #007597, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-toolsforinformationprocesses {
+  background-color: #d14200;
+}
+
+.bg-gradient-toolsforinformationprocesses {
+  background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-toolsforinformationprocesses {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #d14200, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-prioritab {
+  background-color: #222222;
+}
+
+.bg-gradient-prioritab {
+  background: linear-gradient(135deg, #616161, #424242, #212121) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-prioritab {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #222222, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-steelmagnolias {
+  background-color: #9C27B0;
+}
+
+.bg-gradient-steelmagnolias {
+  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-steelmagnolias {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #9C27B0, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-littlemermaid {
+  background-color: #00778e;
+}
+
+.bg-gradient-littlemermaid {
+  background: linear-gradient(135deg, #01579B, #006064, #004D40) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-littlemermaid {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #00778e, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-avenueq {
+  background-color: #F06E31;
+}
+
+.bg-gradient-avenueq {
+  background: linear-gradient(135deg, #E65100, #BF360C, #B71C1C) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-avenueq {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #F06E31, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-sydneysecondarycollege {
+  background-color: #233e99;
+}
+
+.bg-gradient-sydneysecondarycollege {
+  background: linear-gradient(135deg, #01579B, #0D47A1, #1A237E) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-sydneysecondarycollege {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #233e99, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+}
+
+.bg-9to5 {
+  background-color: #EE374D;
+}
+
+.bg-gradient-9to5 {
+  background: linear-gradient(135deg, #E65100, #B71C1C) no-repeat center center fixed;
+  background-color: #000;
+}
+
+.project-9to5 {
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #EE374D, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }

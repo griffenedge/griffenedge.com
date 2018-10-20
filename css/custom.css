@@ -62,6 +62,10 @@ footer {
   }
 }
 
+.content {
+  max-width: 40rem;
+}
+
 .project {
   margin: 1rem;
   height: 17rem;

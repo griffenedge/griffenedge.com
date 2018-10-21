@@ -50,7 +50,7 @@ a:hover {
 .animation-fadein,
 main,
 footer {
-  animation: fadeIn .2s ease;
+  animation: fadeIn 250ms ease;
 }
 
 @keyframes fadeIn {

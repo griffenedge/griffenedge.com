@@ -27,7 +27,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #fff;
+  color: #FFF;
 }
 
 .bg-black {
@@ -64,6 +64,7 @@ footer {
 
 .content {
   max-width: 40rem;
+   text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
 }
 
 .project {
@@ -116,68 +117,68 @@ footer {
 }
 
 .bg-volunteeringatgreenpeace {
-  background-color: #049B4B;
+  background-color: hsl(148, 95%, 31%);
 }
 
 .bg-gradient-volunteeringatgreenpeace {
-  background: linear-gradient(-45deg, #049B4B, #66CC00) no-repeat center center fixed;
+  background: linear-gradient(-45deg, hsl(148, 95%, 31%), hsl(90, 100%, 40%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-volunteeringatgreenpeace {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #049B4B, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(148, 95%, 31%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-ohmygarden {
-  background-color: #28a745;
+  background-color: hsl(134, 61%, 41%);
 }
 
 .bg-gradient-ohmygarden {
-  background: linear-gradient(-45deg, #004D40, #1B5E20, #33691E) no-repeat center center fixed;
+  background: linear-gradient(-45deg, hsl(119, 61%, 41%), hsl(134, 61%, 41%), hsl(149, 61%, 41%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-ohmygarden {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #28a745, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(134, 61%, 41%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-canterburytheatreguild {
-  background-color: #007597;
+  background-color: hsl(194, 100%, 30%);
 }
 
 .bg-gradient-canterburytheatreguild {
-  background: linear-gradient(-45deg, #0D47A1, #01579B, #006064) no-repeat center center fixed;
+  background: linear-gradient(-45deg, hsl(209, 100%, 30%), hsl(194, 100%, 30%), hsl(179, 100%, 30%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-canterburytheatreguild {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #007597, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(194, 100%, 30%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-toolsforinformationprocesses {
-  background-color: #d14200;
+  background-color: hsl(19, 100%, 41%);
 }
 
 .bg-gradient-toolsforinformationprocesses {
-  background: linear-gradient(-45deg, #880e4f, #b71c1c, #bf360c) no-repeat center center fixed;
+  background: linear-gradient(-45deg, hsl(4, 100%, 41%), hsl(19, 100%, 41%), hsl(34, 100%, 41%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-toolsforinformationprocesses {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #d14200, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(19, 100%, 41%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-prioritab {
-  background-color: #222222;
+  background-color: hsl(0, 0%, 13%);
 }
 
 .bg-gradient-prioritab {
-  background: linear-gradient(135deg, #616161, #424242, #212121) no-repeat center center fixed;
+  background: linear-gradient(135deg, hsl(0, 0%, 23%), hsl(0, 0%, 13%), hsl(0, 0%, 3%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-prioritab {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #222222, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(0, 0%, 13%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-steelmagnolias {
@@ -194,53 +195,53 @@ footer {
 }
 
 .bg-littlemermaid {
-  background-color: #00778e;
+  background-color: hsl(190, 100%, 28%);
 }
 
 .bg-gradient-littlemermaid {
-  background: linear-gradient(135deg, #01579B, #006064, #004D40) no-repeat center center fixed;
+  background: linear-gradient(135deg, hsl(180, 100%, 28%), hsl(190, 100%, 28%), hsl(200, 100%, 28%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-littlemermaid {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #00778e, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(190, 100%, 28%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-avenueq {
-  background-color: #F06E31;
+  background-color: hsl(19, 86%, 57%);
 }
 
 .bg-gradient-avenueq {
-  background: linear-gradient(135deg, #E65100, #BF360C, #B71C1C) no-repeat center center fixed;
+  background: linear-gradient(135deg, hsl(29, 86%, 57%), hsl(19, 86%, 57%), hsl(9, 86%, 57%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-avenueq {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #F06E31, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(19, 86%, 57%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-sydneysecondarycollege {
-  background-color: #233e99;
+  background-color: hsl(226, 63%, 37%);
 }
 
 .bg-gradient-sydneysecondarycollege {
-  background: linear-gradient(135deg, #01579B, #0D47A1, #1A237E) no-repeat center center fixed;
+  background: linear-gradient(135deg, hsl(216, 63%, 37%), hsl(226, 63%, 37%), hsl(236, 63%, 37%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-sydneysecondarycollege {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #233e99, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(226, 63%, 37%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }
 
 .bg-9to5 {
-  background-color: #EE374D;
+  background-color: hsl(353, 84%, 57%);
 }
 
 .bg-gradient-9to5 {
-  background: linear-gradient(135deg, #E65100, #B71C1C) no-repeat center center fixed;
+  background: linear-gradient(135deg, hsl(343, 84%, 57%), hsl(353, 84%, 57%), hsl(3, 84%, 57%)) no-repeat center center fixed;
   background-color: #000;
 }
 
 .project-9to5 {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #EE374D, 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(353, 84%, 57%), 0 0 .5rem .25rem rgba(255, 255, 255, 0.1);
 }

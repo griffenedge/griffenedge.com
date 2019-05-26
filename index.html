@@ -8,101 +8,79 @@
   <meta content="Griffen Edge is an aspiring designer that hopes to design a better world." name="description">
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="theme-color" content="#000">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/custom.css">
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js"></script>
 </head>
 
 <body class="bg-black text-light">
   <nav class="navbar navbar-expand navbar-dark bg-black sticky-top justify-content-center flex-column flex-sm-row shadow">
     <a class="navbar-brand" href="/"><img src="/img/logo.svg" alt="EDGE" class="navbar-brand-img"></a>
     <div class="navbar-nav">
-      <div class="nav-item dropdown">
-        <a class="nav-link active dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects<span class="sr-only"> (current)</span></a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <div class="dropdown">
-            <a class="dropdown-item" href="/projects/volunteeringatgreenpeace/">Volunteering at Greenpeace</a>
-            <a class="dropdown-item" href="/projects/canterburytheatreguild">Canterbury Theatre Guild</a>
-            <a class="dropdown-item" href="/projects/ohmygarden">Oh My Garden</a>
-            <a class="dropdown-item" href="/projects/prioritab">Prioritab</a>
-            <a class="dropdown-item" href="/projects/canterburytheatreguild/9to5">9 to 5: The Musical</a>
-            <a class="dropdown-item" href="/projects/toolsforinformationprocesses">Tools for Information Processes</a>
-            <a class="dropdown-item" href="/projects/canterburytheatreguild/littlemermaid">The Little Mermaid</a>
-            <a class="dropdown-item" href="/projects/canterburytheatreguild/avenueq">Avenue Q</a>
-            <a class="dropdown-item" href="/projects/canterburytheatreguild/steelmagnolias">Steel Magnolias</a>
-            <a class="dropdown-item" href="/projects/sydneysecondarycollege">Sydney Secondary College</a>
-          </div>
-        </div>
-      </div>
+      <a class="nav-item nav-link active" href="/">Projects</a>
       <a class="nav-item nav-link" href="/about">About</a>
     </div>
   </nav>
   <main class="container d-flex justify-content-around flex-wrap">
-    <a class="project project-volunteeringatgreenpeace" href="/projects/volunteeringatgreenpeace/">
-      <div class="circle bg-volunteeringatgreenpeace">
-        <img class="img-fluid valign" src="/projects/volunteeringatgreenpeace/volunteeringatgreenpeace_logo.svg">
+    <a class="project project-guitardiy" href="/projects/guitardiy/">
+      <h2 class="project-heading">Guitar DIY</h2>
+      <div class="circle bg-guitardiy">
+        <img class="img-fluid valign" src="/projects/guitardiy/guitardiy_logo.svg" alt="">
       </div>
+    </a>
+    <a class="project project-adlight" href="/projects/adlight/">
+      <h2 class="project-heading">adLight</h2>
+      <div class="circle bg-adlight animation-spin">
+        <img class="img-fluid valign" src="/projects/adlight/adlight_logo.svg" alt="">
+      </div>
+    </a>
+    <a class="project project-cetaceans" href="/projects/cetaceans/">
+      <h2 class="project-heading">Cetaceans: From Captivity to Liberty</h2>
+      <div class="circle bg-cetaceans">
+        <img class="img-fluid valign" src="/projects/cetaceans/cetaceans_logo.svg" alt="" Dolphin by Christy Presler from the Noun Project>
+      </div>
+    </a>
+    <a class="project project-generative" href="/projects/generative/">
+      <h2 class="project-heading">Generative Design</h2>
+      <div class="circle bg-generative animation-spin">
+        <img class="img-fluid valign" src="/projects/generative/generative_logo.svg" alt="">
+      </div>
+    </a>
+    <a class="project project-volunteeringatgreenpeace" href="/projects/volunteeringatgreenpeace/">
       <h2 class="project-heading">Volunteering at Greenpeace Redesign</h2>
+      <div class="circle bg-volunteeringatgreenpeace">
+        <img class="img-fluid valign" src="/projects/volunteeringatgreenpeace/volunteeringatgreenpeace_logo.svg" alt="">
+      </div>
     </a>
     <a class="project project-canterburytheatreguild" href="/projects/canterburytheatreguild/">
-      <div class="circle bg-canterburytheatreguild">
-        <img class="img-fluid valign" src="/projects/canterburytheatreguild/ctg_logo.svg">
-      </div>
       <h2 class="project-heading">Canterbury Theatre Guild</h2>
+      <div class="circle bg-canterburytheatreguild">
+        <img class="img-fluid valign" src="/projects/canterburytheatreguild/ctg_logo.svg" alt="">
+      </div>
     </a>
     <a class="project project-ohmygarden" href="/projects/ohmygarden/">
-      <div class="circle bg-ohmygarden">
-        <img class="img-fluid valign" src="/projects/ohmygarden/omg_logo.svg">
-      </div>
       <h2 class="text project-heading">Oh My Garden</h2>
+      <div class="circle bg-ohmygarden">
+        <img class="img-fluid valign" src="/projects/ohmygarden/omg_logo.svg" alt="">
+      </div>
     </a>
     <a class="project project-prioritab" href="/projects/prioritab/">
-      <div class="circle bg-prioritab">
-        <img class="img-fluid valign" src="/projects/prioritab/prioritab_logo.svg">
-      </div>
       <h2 class="project-heading">Prioritab</h2>
-    </a>
-    <a class="project project-9to5" href="/projects/canterburytheatreguild/9to5/">
-      <div class="circle bg-9to5">
-        <img class="img-fluid valign" src="/projects/canterburytheatreguild/9to5/9to5_logo.svg">
+      <div class="circle bg-prioritab">
+        <img class="img-fluid valign" src="/projects/prioritab/prioritab_logo.svg" alt="">
       </div>
-      <h2 class="project-heading">9 to 5: The Musical</h2>
     </a>
     <a class="project project-toolsforinformationprocesses" href="/projects/toolsforinformationprocesses/">
-      <div class="circle bg-toolsforinformationprocesses">
-        <img class="img-fluid valign" src="/projects/toolsforinformationprocesses/ipt_logo.svg">
-      </div>
       <h2 class="project-heading">Tools for Information Processes</h2>
-    </a>
-    <a class="project project-littlemermaid" href="/projects/canterburytheatreguild/littlemermaid/">
-      <div class="circle bg-littlemermaid">
-        <img class="img-fluid valign" src="/projects/canterburytheatreguild/littlemermaid/lm_logo.svg">
+      <div class="circle bg-toolsforinformationprocesses">
+        <img class="img-fluid valign" src="/projects/toolsforinformationprocesses/ipt_logo.svg" alt="">
       </div>
-      <h2 class="project-heading">The Little Mermaid</h2>
-    </a>
-    <a class="project project-avenueq" href="/projects/canterburytheatreguild/avenueq/">
-      <div class="circle bg-avenueq">
-        <img class="img-fluid valign" src="/projects/canterburytheatreguild/avenueq/avenueq_logo.svg">
-      </div>
-      <h2 class="project-heading">Avenue Q</h2>
-    </a>
-    <a class="project project-steelmagnolias" href="/projects/canterburytheatreguild/steelmagnolias/">
-      <div class="circle bg-steelmagnolias">
-        <img class="img-fluid valign" src="/projects/canterburytheatreguild/steelmagnolias/sm_logo.png">
-      </div>
-      <h2 class="project-heading">Steel Magnolias</h2>
-    </a>
-    <a class="project project-sydneysecondarycollege" href="/projects/sydneysecondarycollege/">
-      <div class="circle bg-sydneysecondarycollege">
-        <img class="img-fluid valign" src="/projects/sydneysecondarycollege/ssc_logo.svg">
-      </div>
-      <h2 class="project-heading">Sydney Secondary College</h2>
     </a>
   </main>
   <footer class="text-center p-3">&copy; Griffen Edge 2019</footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="/scripts/post.js"></script>
 </body>

@@ -3,17 +3,25 @@ html {
   min-height: 100%;
 }
 
-body {
+.page {
   font-family: "PT Sans", system-ui, sans-serif;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+  background-color: #000;
 }
 
-footer {
+main {
+  padding: 1rem;
+}
+
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5rem;
-  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.25);
+  height: 6rem;
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.25)
 }
 
 h1 {
@@ -35,10 +43,6 @@ a:hover {
   background-color: #000;
 }
 
-.navbar {
-  margin-bottom: 1rem;
-}
-
 .nav-item {
   font-weight: bold;
   font-size: 2rem;
@@ -48,40 +52,13 @@ a:hover {
   height: 4rem;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+.transition-fade {
+  transition: 250ms;
+  opacity: 1;
 }
 
-.animation-fadein,
-main,
-footer {
-  animation: fadeIn 250ms ease forwards;
-}
-
-.project {
-  animation-name: fadeIn;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.animation-spin {
-  animation: spin 30s linear infinite;
+html.is-animating .transition-fade {
+  opacity: 0;
 }
 
 .content {

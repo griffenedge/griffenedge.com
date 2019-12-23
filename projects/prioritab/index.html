@@ -13,7 +13,7 @@
   <script src="https://polyfill.io/v3/polyfill.min.js"></script>
 </head>
 
-<body class="bg-gradient-prioritab text-light">
+<body class="page text-light">
   <nav class="navbar navbar-expand navbar-dark bg-black sticky-top justify-content-center flex-column flex-sm-row shadow">
     <a class="navbar-brand" href="/"><img src="/img/logo.svg" alt="EDGE" class="navbar-brand-img"></a>
     <div class="navbar-nav">
@@ -21,22 +21,24 @@
       <a class="nav-item nav-link" href="/about">About</a>
     </div>
   </nav>
-  <main class="container">
-    <div class="content mx-auto">
-      <h1><u><a href="https://chrome.google.com/webstore/detail/prioritab/napbejkndjhcciibiglkimmgdlfjcbnp">Prioritab</a></u></h1>
-      <p>A new tab page that emphasizes setting priorities through the use of cards for "Today", "This Week" and "This Month". Also contains a countdown for the day, month and year.</p>
-      <ul>
-        <li>Created by <a href="https://github.com/ajyang818">Allen Yang</a>.
-        <li>Redesigned by Griffen Edge in 2017 using Brackets</li>
-      </ul>
-      <p>I started using Prioritab to get my studying more in order. As I did I started to notice a few things which I thought could be done better. Luckily Prioritab was maintained on GitHub, so I forked the project and got to work starting with adding responsive icons from Font Awesome and changing the font stack to match that of <a href="https://chrome.google.com/webstore/detail/currently/ojhmphdkpgbibohbnpbfiefkgieacjmh?hl=en">Currently</a>, Prioritab's original design inspiration. I also added a couple of animations to make load-in a little more enjoyable.</p>
-      <p>After that I made a new logo for Prioritab, based on the old one but slightly updated to use the "Font Awesome" fa-star and more closely follow Google Chrome's default tab colour scheme. I also brought Prioritab's libraries up to date. I spent a couple of months working on a responsive redesign so that Prioritab would work on all size screens. I implemented flex-box, changed the default colours, changed everything to use relative sizing and changed the font stack to system-ui.</p>
-    </div>
-    <div class="col-lg-9 p-3 mx-auto">
-      <img class="img-fluid shadow" src="prioritab-screenshot-1.png" srcset="prioritab-screenshot-1.png 2560w, prioritab-screenshot-1-600w.png 600w, prioritab-screenshot-1-900w.png 900w" alt="Prioritab Main Screen" style="background-color: hsl(116, 0%, 13%)">
+  <main id="swup" class="transition-fade bg-prioritab">
+    <div class="container">
+      <div class="content mx-auto">
+        <h1><u><a href="https://chrome.google.com/webstore/detail/prioritab/napbejkndjhcciibiglkimmgdlfjcbnp">Prioritab</a></u></h1>
+        <p>A new tab page that emphasizes setting priorities through the use of cards for "Today", "This Week" and "This Month". Also contains a countdown for the day, month and year.</p>
+        <ul>
+          <li>Created by <a href="https://github.com/ajyang818">Allen Yang</a>.
+          <li>Redesigned by Griffen Edge in 2017 using Brackets</li>
+        </ul>
+        <p>I started using Prioritab to get my studying more in order. As I did I started to notice a few things which I thought could be done better. Luckily Prioritab was maintained on GitHub, so I forked the project and got to work starting with adding responsive icons from Font Awesome and changing the font stack to match that of <a href="https://chrome.google.com/webstore/detail/currently/ojhmphdkpgbibohbnpbfiefkgieacjmh?hl=en">Currently</a>, Prioritab's original design inspiration. I also added a couple of animations to make load-in a little more enjoyable.</p>
+        <p>After that I made a new logo for Prioritab, based on the old one but slightly updated to use the "Font Awesome" fa-star and more closely follow Google Chrome's default tab colour scheme. I also brought Prioritab's libraries up to date. I spent a couple of months working on a responsive redesign so that Prioritab would work on all size screens. I implemented flex-box, changed the default colours, changed everything to use relative sizing and changed the font stack to system-ui.</p>
+      </div>
+      <div class="col-lg-9 p-3 mx-auto">
+        <img class="img-fluid shadow" src="prioritab-screenshot-1.png" srcset="prioritab-screenshot-1.png 2560w, prioritab-screenshot-1-600w.png 600w, prioritab-screenshot-1-900w.png 900w" alt="Prioritab Main Screen" style="background-color: hsl(116, 0%, 13%)">
+      </div>
     </div>
   </main>
-  <footer class="text-center p-3">&copy; Griffen Edge 2019</footer>
+  <footer class="footer">&copy; Griffen Edge 2019</footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

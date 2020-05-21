@@ -2,13 +2,16 @@
   from = "https://www.griffenedge.me/*"
   to = "https://www.griffenedge.com/:splat"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://griffenedge.me/*"
   to = "https://www.griffenedge.com/:splat"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://griffenedge.com/*"
   to = "https://www.griffenedge.com/:splat"
   status = 301
+  force = true

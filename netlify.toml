@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "https://www.griffenedge.me/*"
+  to = "https://www.griffenedge.com/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://griffenedge.me/*"
+  to = "https://www.griffenedge.com/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://griffenedge.com/*"
+  to = "https://www.griffenedge.com/:splat"
+  status = 301

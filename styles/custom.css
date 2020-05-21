@@ -4,7 +4,7 @@ html {
 }
 
 .page {
-  font-family: "Lato", system-ui, sans-serif;
+  font-family: "Lato";
   margin-bottom: 6rem;
   background-color: #000;
 }
@@ -42,14 +42,13 @@ h6::after,
 }
 
 a {
-  font-weight: bold;
   color: #fff;
+  font-weight: bold;
   transition: 100ms;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .bg-black {
@@ -72,6 +71,11 @@ html.is-animating .transition-fade {
 
 .content {
   max-width: 40rem;
+}
+
+main {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .project {
@@ -121,7 +125,6 @@ html.is-animating .transition-fade {
 .valign {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 

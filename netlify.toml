@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "https://www.griffenedge.com/:splat"
-  status = 301
-  force = true

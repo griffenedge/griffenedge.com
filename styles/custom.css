@@ -1,9 +1,15 @@
 :root {
+  /* Colors */
   --orange: #ff4f00;
   --primary: var(--orange);
-  --adlight: #00999e;
   --background: #121212;
   --surface: #121212;
+    /* Projects */
+    --adlight: #00999e;
+    --prioritab: hsl(0, 0%, 13%);
+    --sydney-secondary-college: hsl(226, 63%, 37%);
+  /* Values */
+  --footer-height: 4rem;
 }
 
 html {
@@ -13,7 +19,11 @@ html {
 
 .page {
   font-family: "Lato";
-  margin-bottom: 3.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.03125rem;
+  margin-bottom: var(--footer-height);
   background-color: var(--background);
 }
 
@@ -27,7 +37,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 3.5rem;
+  height: var(--footer-height);
   background-color: var(--surface);
   display: flex;
   align-items: center;
@@ -55,6 +65,40 @@ h6::after,
   content: ".";
 }
 
+h1 {
+  font-size: 6rem;
+  line-height: 117%;
+  letter-spacing: -0.09375rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+  line-height: 120%;
+  letter-spacing: -0.03125rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 117%;
+}
+
+h4 {
+  font-size: 2.125rem;
+  line-height: 106%;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0.01125rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 120%;
+  letter-spacing: 0.009375rem;
+}
+
 a {
   color: #fff;
   font-weight: bold;
@@ -63,6 +107,20 @@ a {
 
 a:hover {
   color: rgba(255, 255, 255, 0.87);
+}
+
+.btn {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 114%;
+  letter-spacing: 0.078125rem;
+  padding: 0 1rem;
+  min-height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-black {
@@ -94,8 +152,9 @@ main {
 
 .project {
   margin: 1rem;
-  height: 17rem;
-  width: 17rem;
+  height: 20rem;
+  max-width: 20rem;
+  width: 100%;
   padding: .5rem;
   position: relative;
   transition: 200ms;
@@ -243,6 +302,10 @@ main {
   box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(0, 0%, 13%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
 }
 
+.prioritab {
+  --primary: var(--prioritab);
+}
+
 .bg-steelmagnolias {
   background-color: #9C27B0;
 }
@@ -293,6 +356,10 @@ main {
 
 .project-sydneysecondarycollege {
   box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(226, 63%, 37%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
+}
+
+.sydney-secondary-college {
+  --primary: var(--sydney-secondary-college);
 }
 
 .bg-9to5 {

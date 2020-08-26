@@ -2,12 +2,21 @@
   /* Colors */
   --orange: #ff4f00;
   --primary: var(--orange);
-  --background: #121212;
-  --surface: #121212;
+  --background: #ffffff;
+  --surface: #ffffff;
     /* Projects */
     --adlight: #00999e;
     --prioritab: hsl(0, 0%, 13%);
     --sydney-secondary-college: hsl(226, 63%, 37%);
+    --guitar-diy: hsl(0, 90%, 31%);
+    --cetaceans: hsl(202, 100%, 37%);
+    --generative: hsl(343, 85%, 53%);
+    --volunteering-at-greenpeace: hsl(148, 95%, 31%);
+    --canterbury-theatre-guild: #007597;
+    --little-mermaid: hsl(190, 100%, 28%);
+    --steel-magnolias: #9C27B0;
+    --avenue-q: hsl(19, 86%, 57%);
+    --nine-to-five: hsl(353, 84%, 57%);
   /* Values */
   --footer-height: 4rem;
 }
@@ -17,7 +26,7 @@ html {
   min-height: 100%;
 }
 
-.page {
+body {
   font-family: "Lato";
   font-style: normal;
   font-weight: normal;
@@ -25,11 +34,6 @@ html {
   letter-spacing: 0.03125rem;
   margin-bottom: var(--footer-height);
   background-color: var(--background);
-}
-
-.navbar {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09)), #121212;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
 }
 
 .footer {
@@ -42,10 +46,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.masthead {
-  background-color: var(--primary);
 }
 
 h1,
@@ -104,31 +104,21 @@ h6 {
 }
 
 a {
-  color: #fff;
+  color: var(--primary);
   font-weight: bold;
   transition: 100ms;
 }
 
-a:hover {
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.btn {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 114%;
-  letter-spacing: 0.078125rem;
-  padding: 0 1rem;
-  min-height: 2.25rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .bg-black {
   background-color: #000;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.lead {
+  font-weight: 400;
 }
 
 .navbar-brand {
@@ -147,26 +137,36 @@ html.is-animating .transition-fade {
 
 .content {
   max-width: 40rem;
-}
-
-main {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+.masthead {
+  background-color: var(--primary);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.masthead a {
+  color: inherit;
+}
+
 .project {
-  margin: 1rem;
+  margin: 1rem 0;
   height: 20rem;
   max-width: 20rem;
   width: 100%;
-  padding: .5rem;
+  padding: 1rem;
+  border-radius: 1rem;
   position: relative;
   transition: 200ms;
-  background-color: rgba(255, 255, 255, .05);
+  background: var(--surface);
+  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem var(--primary), .5rem .5rem 2rem rgba(0, 0, 0, 0.1);
+
 }
 
 .project:hover {
-  background-color: rgba(255, 255, 255, .12);
+  background-color: rgba(0, 0, 0, .04);
   transform: scale(1.05);
   transition: 250ms;
 }
@@ -181,9 +181,9 @@ main {
 
 .project-heading {
   position: absolute;
-  bottom: .5rem;
-  left: .5rem;
-  right: .5rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -197,6 +197,7 @@ main {
   top: 25%;
   left: 25%;
   padding: 1.25rem;
+  background-color: var(--primary);
 }
 
 .valign {
@@ -205,176 +206,46 @@ main {
   transform: translateY(-50%);
 }
 
-.bg-guitardiy {
-  background-color: hsl(0, 90%, 31%);
-}
-
-.project-guitardiy {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(0, 90%, 31%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-adlight {
-  background-color: hsl(182, 100%, 31%);
+.guitar-diy {
+  --primary: var(--guitar-diy);
 }
 
 .adlight {
   --primary: var(--adlight);
 }
 
-.project-adlight {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(182, 100%, 31%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
+.cetaceans {
+  --primary: var(--cetaceans);
 }
 
-.bg-cetaceans {
-  background-color: hsl(202, 100%, 37%);
+.generative {
+  --primary: var(--generative);
 }
 
-.project-cetaceans {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(202, 100%, 37%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
+.volunteering-at-greenpeace {
+  --primary: var(--volunteering-at-greenpeace);
 }
 
-.bg-generative {
-  background-color: hsl(343, 85%, 53%);
-}
-
-.project-generative {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(343, 85%, 53%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-volunteeringatgreenpeace {
-  background-color: hsl(148, 95%, 31%);
-}
-
-.bg-gradient-volunteeringatgreenpeace {
-  background: linear-gradient(-45deg, hsl(148, 95%, 31%), hsl(90, 100%, 40%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-volunteeringatgreenpeace {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(148, 95%, 31%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-ohmygarden {
-  background-color: hsl(134, 61%, 41%);
-}
-
-.bg-gradient-ohmygarden {
-  background: linear-gradient(-45deg, hsl(119, 61%, 41%), hsl(134, 61%, 41%), hsl(149, 61%, 41%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-ohmygarden {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(134, 61%, 41%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-canterburytheatreguild {
-  background-color: hsl(194, 100%, 30%);
-}
-
-.bg-gradient-canterburytheatreguild {
-  background: linear-gradient(-45deg, hsl(209, 100%, 30%), hsl(194, 100%, 30%), hsl(179, 100%, 30%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-canterburytheatreguild {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(194, 100%, 30%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-toolsforinformationprocesses {
-  background-color: hsl(19, 100%, 41%);
-}
-
-.bg-gradient-toolsforinformationprocesses {
-  background: linear-gradient(-45deg, hsl(4, 100%, 41%), hsl(19, 100%, 41%), hsl(34, 100%, 41%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-toolsforinformationprocesses {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(19, 100%, 41%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-prioritab {
-  background-color: hsl(0, 0%, 13%);
-}
-
-.bg-gradient-prioritab {
-  background: linear-gradient(135deg, hsl(0, 0%, 23%), hsl(0, 0%, 13%), hsl(0, 0%, 3%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-prioritab {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(0, 0%, 13%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
+.canterbury-theatre-guild {
+  --primary: var(--canterbury-theatre-guild);
 }
 
 .prioritab {
   --primary: var(--prioritab);
 }
 
-.bg-steelmagnolias {
-  background-color: #9C27B0;
+.steel-magnolias {
+  --primary: var(--steel-magnolias)
 }
 
-.bg-gradient-steelmagnolias {
-  background: linear-gradient(135deg, #880E4F, #4A148C) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-steelmagnolias {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem #9C27B0, 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-littlemermaid {
-  background-color: hsl(190, 100%, 28%);
-}
-
-.bg-gradient-littlemermaid {
-  background: linear-gradient(135deg, hsl(180, 100%, 28%), hsl(190, 100%, 28%), hsl(200, 100%, 28%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-littlemermaid {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(190, 100%, 28%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-avenueq {
-  background-color: hsl(19, 86%, 57%);
-}
-
-.bg-gradient-avenueq {
-  background: linear-gradient(135deg, hsl(29, 86%, 57%), hsl(19, 86%, 57%), hsl(9, 86%, 57%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-avenueq {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(19, 86%, 57%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
-}
-
-.bg-sydneysecondarycollege {
-  background-color: hsl(226, 63%, 37%);
-}
-
-.bg-gradient-sydneysecondarycollege {
-  background: linear-gradient(135deg, hsl(216, 63%, 37%), hsl(226, 63%, 37%), hsl(236, 63%, 37%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-sydneysecondarycollege {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(226, 63%, 37%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
+.little-mermaid {
+  --primary: var(--little-mermaid)
 }
 
 .sydney-secondary-college {
   --primary: var(--sydney-secondary-college);
 }
 
-.bg-9to5 {
-  background-color: hsl(353, 84%, 57%);
-}
-
-.bg-gradient-9to5 {
-  background: linear-gradient(135deg, hsl(343, 84%, 57%), hsl(353, 84%, 57%), hsl(3, 84%, 57%)) no-repeat center center fixed;
-  background-color: #000;
-}
-
-.project-9to5 {
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.25), .5rem .5rem hsl(353, 84%, 57%), 0 0 .5rem .25rem rgba(0, 0, 0, 0.1);
+.nine-to-five {
+  --primary: var(--nine-to-five);
 }

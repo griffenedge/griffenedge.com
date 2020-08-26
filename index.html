@@ -6,9 +6,9 @@
   <meta charset="UTF-8">
   <title>Griffen Edge - User Experience Designer</title>
   <meta content="Griffen Edge is a UX designer that hopes to design a better world." name="description">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#ff4f00">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -16,33 +16,41 @@
   <script src="https://polyfill.io/v3/polyfill.min.js"></script>
 </head>
 
-<body class="page text-light">
-  <nav class="navbar navbar-expand navbar-dark justify-content-center flex-column flex-sm-row">
-    <a class="navbar-brand edgedot" href="/">Griffen Edge</a>
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="/">Work</a>
-      <a class="nav-item nav-link" href="/about">About</a>
+<body>
+  <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
+  <header class="navbar navbar-expand navbar-light">
+    <div class="container">
+      <a class="navbar-brand edgedot" href="/">Griffen Edge</a>
+      <nav>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </nav>
-  <main id="swup" class="transition-fade">
+  </header>
+  <main id="main-content">
     <div class="container">
       <section class="mt-5">
         <h1>Griffen Edge</h1>
         <h2>User Experience Designer</h2>
-        <p>I'm passionate about bringing a holistic design approach to big problems, in order to make a difference in people’s lives. </p>
-        <div><a class="btn btn-outline-light" href="/about">More about me</a></div>
-        <div class="text-center"><a href="#case-studies">&#10507; Scroll</a></div>
+        <p class="lead">I'm passionate about bringing a holistic design approach to big problems in order to make a difference in people’s lives. </p>
+        <div><a class="btn btn-dark" href="/about.html">More about me</a></div>
       </section>
       <section id="case-studies" class="mt-5">
         <h2>Case studies</h2>
         <div class="d-flex justify-content-around flex-wrap">
-          <a class="project project-adlight adlight" href="/projects/adlight/">
+          <a class="project adlight" href="/projects/adlight/">
             <h2 class="project-heading">adLight</h2>
             <div class="circle bg-adlight">
               <img class="img-fluid valign" src="/projects/adlight/adlight_logo.svg" alt="">
             </div>
           </a>
-          <a class="project project-prioritab prioritab" href="/projects/prioritab/">
+          <a class="project prioritab" href="/projects/prioritab/">
             <h2 class="project-heading">Prioritab</h2>
             <div class="circle bg-prioritab">
               <img class="img-fluid valign" src="/projects/prioritab/prioritab_logo.svg" alt="">
@@ -53,37 +61,37 @@
       <section class="mt-5">
         <h2>Other work</h2>
         <div class="d-flex justify-content-around flex-wrap">
-          <a class="project project-guitardiy" href="/projects/guitardiy/">
+          <a class="project guitar-diy" href="/projects/guitardiy/">
             <h2 class="project-heading">Guitar DIY</h2>
             <div class="circle bg-guitardiy">
               <img class="img-fluid valign" src="/projects/guitardiy/guitardiy_logo.svg" alt="" loading="lazy">
             </div>
           </a>
-          <a class="project project-cetaceans" href="/projects/cetaceans/">
+          <a class="project cetaceans" href="/projects/cetaceans/">
             <h2 class="project-heading">Cetaceans: From Captivity to Liberty</h2>
             <div class="circle bg-cetaceans">
               <img class="img-fluid valign" src="/projects/cetaceans/cetaceans_logo.svg" alt="" loading="lazy">
             </div>
           </a>
-          <a class="project project-generative" href="/projects/generative/">
+          <a class="project generative" href="/projects/generative/">
             <h2 class="project-heading">Generative Design</h2>
             <div class="circle bg-generative">
               <img class="img-fluid valign" src="/projects/generative/generative_logo.svg" alt="" loading="lazy">
             </div>
           </a>
-          <a class="project project-volunteeringatgreenpeace" href="/projects/volunteeringatgreenpeace/">
+          <a class="project volunteering-at-greenpeace" href="/projects/volunteeringatgreenpeace/">
             <h2 class="project-heading">Volunteering at Greenpeace Redesign</h2>
             <div class="circle bg-volunteeringatgreenpeace">
               <img class="img-fluid valign" src="/projects/volunteeringatgreenpeace/volunteeringatgreenpeace_logo.svg" alt="" loading="lazy">
             </div>
           </a>
-          <a class="project project-canterburytheatreguild" href="/projects/canterburytheatreguild/">
+          <a class="project canterbury-theatre-guild" href="/projects/canterburytheatreguild/">
             <h2 class="project-heading">Canterbury Theatre Guild</h2>
             <div class="circle bg-canterburytheatreguild">
               <img class="img-fluid valign" src="/projects/canterburytheatreguild/ctg_logo.svg" alt="" loading="lazy">
             </div>
           </a>
-          <a class="project project-sydneysecondarycollege sydney-secondary-college" href="/projects/sydneysecondarycollege/">
+          <a class="project sydney-secondary-college" href="/projects/sydneysecondarycollege/">
             <h2 class="project-heading">Sydney Secondary College</h2>
             <div class="circle bg-sydneysecondarycollege">
               <img class="img-fluid valign" src="/projects/sydneysecondarycollege/ssc_logo.svg" alt="" loading="lazy">
@@ -98,6 +106,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="/scripts/after.js"></script></body>
+  <script src="/scripts/after.js"></script>
+</body>
 
 </html>

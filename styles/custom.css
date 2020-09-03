@@ -6,17 +6,17 @@
   --surface: #ffffff;
     /* Projects */
     --adlight: #00999e;
-    --prioritab: hsl(0, 0%, 13%);
-    --sydney-secondary-college: hsl(226, 63%, 37%);
-    --guitar-diy: hsl(0, 90%, 31%);
-    --cetaceans: hsl(202, 100%, 37%);
-    --generative: hsl(343, 85%, 53%);
-    --volunteering-at-greenpeace: hsl(148, 95%, 31%);
+    --prioritab: #212121;
+    --sydney-secondary-college: #233f9a;
+    --guitar-diy: #960808;
+    --cetaceans: #0078bd;
+    --generative: #ed215b;
+    --volunteering-at-greenpeace: #049a4a;
     --canterbury-theatre-guild: #007597;
-    --little-mermaid: hsl(190, 100%, 28%);
+    --little-mermaid: #00778f;
     --steel-magnolias: #9C27B0;
-    --avenue-q: hsl(19, 86%, 57%);
-    --nine-to-five: hsl(353, 84%, 57%);
+    --avenue-q: #f06f33;
+    --nine-to-five: #ed354b;
   /* Values */
   --footer-height: 4rem;
 }
@@ -143,8 +143,8 @@ html.is-animating .transition-fade {
 
 .masthead {
   background-color: var(--primary);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .masthead a {

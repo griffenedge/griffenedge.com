@@ -1,45 +1,57 @@
+# Plugins
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "netlify-plugin-submit-sitemap"
+
+[[plugins]]
+package = "netlify-plugin-a11y"
+
+  [plugins.inputs]
+  resultMode = "warn"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
 # Redirects
 
 [[redirects]]
-  from = "/projects/canterburytheatreguild/avenueq/*"
-  to = "/canterbury-theatre-guild/avenue-q/:splat"
+from = "/projects/canterburytheatreguild/avenueq/*"
+to = "/canterbury-theatre-guild/avenue-q/:splat"
 
 [[redirects]]
-  from = "/projects/canterburytheatreguild/steel-magnolias/*"
-  to = "/canterbury-theatre-guild/steel-magnolias/:splat"
+from = "/projects/canterburytheatreguild/steel-magnolias/*"
+to = "/canterbury-theatre-guild/steel-magnolias/:splat"
 
 [[redirects]]
-  from = "/projects/canterburytheatreguild/littlemermaid/*"
-  to = "/canterbury-theatre-guild/little-mermaid/:splat"
+from = "/projects/canterburytheatreguild/littlemermaid/*"
+to = "/canterbury-theatre-guild/little-mermaid/:splat"
 
 [[redirects]]
-  from = "/projects/canterburytheatreguild/9to5/*"
-  to = "/canterbury-theatre-guild/9-to-5/:splat"
-  
-[[redirects]]
-  from = "/projects/canterburytheatreguild/*"
-  to = "/canterbury-theatre-guild/:splat"
+from = "/projects/canterburytheatreguild/9to5/*"
+to = "/canterbury-theatre-guild/9-to-5/:splat"
 
 [[redirects]]
-  from = "/projects/guitardiy/*"
-  to = "/guitar-diy/:splat"
+from = "/projects/canterburytheatreguild/*"
+to = "/canterbury-theatre-guild/:splat"
 
 [[redirects]]
-  from = "/projects/ohmygarden/*"
-  to = "/oh-my-garden/:splat"
+from = "/projects/guitardiy/*"
+to = "/guitar-diy/:splat"
 
 [[redirects]]
-  from = "/projects/sydneysecondarycollege/*"
-  to = "/sydney-secondary-college/:splat"
+from = "/projects/sydneysecondarycollege/*"
+to = "/sydney-secondary-college/:splat"
 
 [[redirects]]
-  from = "/projects/toolsforinformationprocesses/*"
-  to = "/tools-for-information-processes/:splat"
+from = "/projects/volunteeringatgreenpeace/*"
+to = "/volunteering-at-greenpeace/:splat"
 
 [[redirects]]
-  from = "/projects/volunteeringatgreenpeace/*"
-  to = "/volunteering-at-greenpeace/:splat"
-
-[[redirects]]
-  from = "/projects/*"
-  to = "/:splat"
+from = "/projects/*"
+to = "/:splat"

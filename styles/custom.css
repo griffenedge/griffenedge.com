@@ -206,12 +206,28 @@ html.is-animating .transition-fade {
   transform: translateY(-50%);
 }
 
-.guitar-diy {
-  --primary: var(--guitar-diy);
-}
-
 .adlight {
   --primary: var(--adlight);
+}
+
+.canterbury-theatre-guild {
+  --primary: var(--canterbury-theatre-guild);
+}
+
+.nine-to-five {
+  --primary: var(--nine-to-five);
+}
+
+.avenue-q {
+  --primary: var(--avenue-q)
+}
+
+.little-mermaid {
+  --primary: var(--little-mermaid)
+}
+
+.steel-magnolias {
+  --primary: var(--steel-magnolias)
 }
 
 .cetaceans {
@@ -222,30 +238,18 @@ html.is-animating .transition-fade {
   --primary: var(--generative);
 }
 
-.volunteering-at-greenpeace {
-  --primary: var(--volunteering-at-greenpeace);
-}
-
-.canterbury-theatre-guild {
-  --primary: var(--canterbury-theatre-guild);
+.guitar-diy {
+  --primary: var(--guitar-diy);
 }
 
 .prioritab {
   --primary: var(--prioritab);
 }
 
-.steel-magnolias {
-  --primary: var(--steel-magnolias)
-}
-
-.little-mermaid {
-  --primary: var(--little-mermaid)
-}
-
 .sydney-secondary-college {
   --primary: var(--sydney-secondary-college);
 }
 
-.nine-to-five {
-  --primary: var(--nine-to-five);
+.volunteering-at-greenpeace {
+  --primary: var(--volunteering-at-greenpeace);
 }

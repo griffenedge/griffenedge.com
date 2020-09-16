@@ -1,9 +1,3 @@
-WebFont.load({
-  google: {
-    families: ['Lato:400;700', 'Aleo:700']
-  }
-});
-
 function externalLinks() {
   for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
     var b = c[a];

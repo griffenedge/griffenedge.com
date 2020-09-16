@@ -8,6 +8,7 @@
     --adlight: #00999e;
     --prioritab: #212121;
     --sydney-secondary-college: #233f9a;
+    --grammarly-service-analysis: #15C39A;
     --guitar-diy: #960808;
     --cetaceans: #0078bd;
     --generative: #ed215b;
@@ -236,6 +237,10 @@ html.is-animating .transition-fade {
 
 .generative {
   --primary: var(--generative);
+}
+
+.grammarly-service-analysis {
+  --primary: var(--grammarly-service-analysis);
 }
 
 .guitar-diy {

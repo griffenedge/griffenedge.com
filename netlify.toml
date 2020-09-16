@@ -25,7 +25,7 @@ from = "/projects/canterburytheatreguild/avenueq/*"
 to = "/canterbury-theatre-guild/avenue-q/:splat"
 
 [[redirects]]
-from = "/projects/canterburytheatreguild/steel-magnolias/*"
+from = "/projects/canterburytheatreguild/steelmagnolias/*"
 to = "/canterbury-theatre-guild/steel-magnolias/:splat"
 
 [[redirects]]

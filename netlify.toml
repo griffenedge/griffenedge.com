@@ -7,7 +7,8 @@ package = "netlify-plugin-checklinks"
 package = "@netlify/plugin-sitemap"
 
  [plugins.inputs]
- exclude = ['404']
+ exclude = ['./404']
+ prettyURLs = false
 
 [[plugins]]
 package = "netlify-plugin-submit-sitemap"

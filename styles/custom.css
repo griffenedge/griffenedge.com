@@ -18,6 +18,7 @@
     --steel-magnolias: #9C27B0;
     --avenue-q: #f06f33;
     --nine-to-five: #ed354b;
+    --pledge-protect: #f34a63;
   /* Values */
   --footer-height: 4rem;
 }
@@ -205,6 +206,10 @@ html.is-animating .transition-fade {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.pledge-protect {
+  --primary: var(--pledge-protect);
 }
 
 .adlight {

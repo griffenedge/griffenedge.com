@@ -19,6 +19,7 @@
     --avenue-q: #f06f33;
     --nine-to-five: #ed354b;
     --pledge-protect: #f34a63;
+    --astronome: #0b093e;
   /* Values */
   --footer-height: 4rem;
 }
@@ -214,6 +215,10 @@ html.is-animating .transition-fade {
 
 .adlight {
   --primary: var(--adlight);
+}
+
+.astronome {
+  --primary: var(--astronome);
 }
 
 .canterbury-theatre-guild {

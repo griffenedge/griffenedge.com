@@ -11,9 +11,34 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#ff4f00">
-  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/lato/Lato-Regular-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato/Lato-Bold-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/aleo/Aleo-Bold-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles/bootstrap.min.css">
   <link rel="stylesheet" href="/styles/custom.css">
+  <style>
+    @font-face {
+      font-family: Lato;
+      src: url(/fonts/lato/Lato-Regular-kern-latin.woff2) format('woff2'), url(/fonts/lato/Lato-Regular-kern-latin.woff) format('woff');
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: Lato;
+      src: url(/fonts/lato/Lato-Bold-kern-latin.woff2) format('woff2'), url(/fonts/lato/Lato-Bold-kern-latin.woff) format('woff');
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: Aleo;
+      src: url(/fonts/aleo/Aleo-Bold-kern-latin.woff2) format('woff2'), url(/fonts/aleo/Aleo-Bold-kern-latin.woff) format('woff');
+      font-weight: 700;
+      font-display: swap;
+    }
+
+  </style>
 </head>
 
 <body>

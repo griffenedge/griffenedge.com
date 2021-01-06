@@ -12,13 +12,13 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#ff4f00">
   <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles/custom.css">
+  <link rel="stylesheet" href="/style/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="/style/custom.css">
 </head>
 
 <body>
   <header class="navbar navbar-expand navbar-light">
-    <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
+    <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
     <div class="container">
       <a class="navbar-brand edgedot" href="/">Griffen Edge</a>
       <nav>
@@ -69,10 +69,20 @@
       </div>
     </article>
   </main>
-  <footer class="footer">&copy; Griffen Edge 2020</footer>
-  <script src="/scripts/jquery-3.5.1.slim.min.js"></script>
-  <script src="/scripts/bootstrap.bundle.min.js"></script>
-  <script src="/scripts/after.js"></script>
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; Griffen Edge 2021</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="mailto:griffen@griffenedge.com" rel="me">griffen@griffenedge.com</a></li>
+        <li class="list-inline-item"><a href="https://github.com/griffedge" rel="me">GitHub</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/griffenedge/" rel="me">LinkedIn</a></li>
+        <li class="list-inline-item"><a href="/griffen-edge-resume.pdf">Résumé (PDF)</a></li>
+        <li class="list-inline-item"><a href="https://twitter.com/griffenedge" rel="me">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="/script/vendor/bootstrap.bundle.min.js"></script>
+  <script src="/script/after.js"></script>
 </body>
 
 </html>

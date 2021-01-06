@@ -1,3 +1,5 @@
+/** Script that is placed at the end of the body */
+
 function addRelNoOpener(link) {
   let linkTypes = (link.getAttribute('rel') || '').split(' ');
   if (!linkTypes.includes('noopener')) {
@@ -7,8 +9,8 @@ function addRelNoOpener(link) {
 }
 
 function addNewTabMessage(link) {
-  if (!link.querySelector('.screen-reader-only')) {
-    link.insertAdjacentHTML('beforeend', '<span class="sr-only">(opens in a new tab)</span>');
+  if (!link.querySelector('.visually-hidden')) {
+    link.insertAdjacentHTML('beforeend', '<span class="visually-hidden"> (opens in a new tab)</span>');
   }
 }
 

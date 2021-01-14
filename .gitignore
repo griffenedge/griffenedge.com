@@ -1,2 +1,9 @@
+# npm dependencies
 node_modules
+package-lock.json
+
+# macOS
 .DS_Store
+
+# Eleventy output directory
+/dist

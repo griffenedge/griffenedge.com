@@ -1,0 +1,25 @@
+{
+  "name": "Griffen Edge - User Experience Designer",
+  "short_name": "Griffen Edge",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/assets/images/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/maskable_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ff4f00",
+  "background_color": "#ffffff"
+}

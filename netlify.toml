@@ -15,6 +15,9 @@ package = "@netlify/plugin-sitemap"
 package = "netlify-plugin-submit-sitemap"
 
 # Redirects
+[build]
+  publish = "dist"
+  command = "npx eleventy"
 
 [[redirects]]
 from = "/projects/canterburytheatreguild/avenueq/*"

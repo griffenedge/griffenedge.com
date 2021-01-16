@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/griffenedge/griffenedge.com#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.0",
+    "luxon": "^1.25.0"
   }
 }

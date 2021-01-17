@@ -1,10 +1,15 @@
+---
+title: Oh No! Page Not Found
+permalink: 404.html
+eleventyExcludeFromCollections: true
+---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>404 Not Found | Griffen Edge</title>
+  <title>{{ title }} | Griffen Edge</title>
   <meta content="Griffen Edge is a UX designer that hopes to design a better world." name="description">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
@@ -35,8 +40,8 @@
   </header>
   <main id="main-content">
     <div class="container content">
-      <h1 class="display-1 font-weight-bold">404 Not Found</h1>
-      <p>Uh oh, I couldn't find the page you were looking for. This is either because:</p>
+      <h1 class="display-1 font-weight-bold">{{ title }}</h1>
+      <p>The page you were looking for couldn't be found. This is either because:</p>
       <ul>
         <li>There is an error in the URL entered into your web browser. Please check the URL and try again.</li>
         <li>The page you are looking for has been moved or deleted.</li>

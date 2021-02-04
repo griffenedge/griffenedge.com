@@ -1,11 +1,13 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
 
   // Plugins are custom code that Eleventy can import into a project from an external repository.
   eleventyConfig.addPlugin(eleventyRssPlugin);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Specify files or directories for Eleventy to copy to output.
   eleventyConfig.addPassthroughCopy("src/style");

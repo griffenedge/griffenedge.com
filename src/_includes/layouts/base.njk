@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+  {% include "head.njk" %}
+
+  <body>
+    <header class="navbar navbar-expand navbar-light">
+      <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+      <div class="container">
+        <a class="navbar-brand edgedot" href="/">Griffen Edge</a>
+        <nav>
+          <ul class="navbar-nav">
+            {%- for entry in collections.all | eleventyNavigation %}
+              <li class="nav-item">
+                <a class="nav-link{% if entry.url == page.url %} active{% endif %}"{% if entry.url == page.url %} aria-current="page"{% endif %} href="entry.url">{{ entry.title }}</a>
+              </li>
+            {%- endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content"{% if theme %} class="{{ theme }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+    <footer class="footer">
+      <div class="container text-center">
+        <p>&copy; Griffen Edge 2021</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="mailto:griffen@griffenedge.com" rel="me">griffen@griffenedge.com</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/griffenedge" rel="me">GitHub</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/griffenedge/" rel="me">LinkedIn</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/griffen-edge-resume.pdf">Résumé (PDF)</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/griffenedge" rel="me">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script href="/script/vendor/bootstrap.bundle.min.js"></script>
+    <script href="/script/after.js"></script>
+  </body>
+</html>

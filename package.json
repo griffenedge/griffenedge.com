@@ -1,18 +1,23 @@
 {
   "name": "griffenedge.com",
-  "description": "Personal website for @griffenedge",
+  "description": "Personal website of @griffenedge",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/griffenedge/griffenedge.com.git"
   },
-  "keywords": [
-    "Griffen Edge"
-  ],
-  "author": "Griffen Edge <griffen@griffenedge.com> (https://www.griffenedge.com/)",
+  "author": {
+    "name": "Griffen Edge",
+    "email": "griffen@griffenedge.com",
+    "url": "https://www.griffenedge.com/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/griffenedge/griffenedge.com/issues"

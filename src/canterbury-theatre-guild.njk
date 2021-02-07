@@ -24,29 +24,15 @@ tags: other-work
 <aside class="container">
   <h2>Projects</h2>
   <div class="d-flex justify-content-around flex-wrap">
-    <a class="project nine-to-five" href="/canterbury-theatre-guild/9-to-5/">
-      <strong class="project-heading">9 to 5: The Musical</strong>
-      <div class="circle">
-        <img class="img-fluid w-100 valign" src="/assets/images/canterbury-theatre-guild/9-to-5/9-to-5-logo.svg" width="120" height="120" alt="9 to 5 logo" loading="lazy">
-      </div>
-    </a>
-    <a class="project little-mermaid" href="/canterbury-theatre-guild/little-mermaid/">
-      <strong class="project-heading">The Little Mermaid</strong>
-      <div class="circle">
-        <img class="img-fluid w-100 valign" src="/assets/images/canterbury-theatre-guild/little-mermaid/little-mermaid-logo.svg" width="120" height="120" alt="Little Mermaid logo" loading="lazy">
-      </div>
-    </a>
-    <a class="project avenue-q" href="/canterbury-theatre-guild/avenue-q/">
-      <strong class="project-heading">Avenue Q</strong>
-      <div class="circle">
-        <img class="img-fluid w-100 valign" src="/assets/images/canterbury-theatre-guild/avenue-q/avenue-q-logo.svg" width="120" height="120" alt="Avenue Q logo" loading="lazy">
-      </div>
-    </a>
-    <a class="project steel-magnolias" href="/canterbury-theatre-guild/steel-magnolias/">
-      <strong class="project-heading">Steel Magnolias</strong>
-      <div class="circle">
-        <img class="img-fluid w-100 valign" src="/assets/images/canterbury-theatre-guild/steel-magnolias/steel-magnolias-logo.png" width="120" height="120" alt="Steel Magnolias logo" loading="lazy">
-      </div>
-    </a>
+    {%- for project in collections["canterbury-theatre-guild-project"] %}
+      <a class="project {{ project.data.theme }}" href="{{ project.url }}">
+        <strong class="project-heading">{{ project.data.title }}</strong>
+        <div class="circle">
+          {% if project.data.logo.src -%}
+            <img class="img-fluid w-100 valign" src="{{ project.data.logo.src }}" width="120" height="120" alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}" loading="lazy"/>
+          {%- endif %}
+        </div>
+      </a>
+    {%- endfor %}
   </div>
 </aside>

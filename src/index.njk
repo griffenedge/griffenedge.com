@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Projects
+  order: 1
+---
+
+<div class="container">
+  <section class="mt-5 col-lg-9 col-xl-8 mx-auto">
+    <h1>{{ metadata.title }}</h1>
+    <h2>{{ metadata.tagline }}</h2>
+    <p class="lead">I'm passionate about bringing a holistic design approach to big problems in order to make a difference in people’s lives.</p>
+    <a class="btn btn-dark" href="/about/">More about me</a>
+  </section>
+  <nav aria-label="Projects">
+    <section id="case-studies" class="mt-5">
+      <h2>Case studies</h2>
+      <div class="d-flex justify-content-around flex-wrap">
+        {%- for project in collections["case-study"] | reverse %}
+          <a class="project {{ project.data.theme }}" href="{{ project.url }}">
+            <strong class="project-heading">{{ project.data.title }}</strong>
+            <div class="circle">
+              {% if project.data.logo.src -%}
+                <img class="img-fluid w-100 valign" src="{{ project.data.logo.src }}" width="120" height="120" alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}"/>
+              {%- endif %}
+            </div>
+          </a>
+        {%- endfor %}
+      </div>
+    </section>
+    <section class="mt-5">
+      <h2>Other work</h2>
+      <div class="d-flex justify-content-around flex-wrap">
+        {%- for project in collections["other-work"] | reverse %}
+          <a class="project {{ project.data.theme }}" href="{{ project.url }}">
+            <strong class="project-heading">{{ project.data.title }}</strong>
+            <div class="circle">
+              {% if project.data.logo.src -%}
+                <img class="img-fluid w-100 valign" src="{{ project.data.logo.src }}" width="120" height="120" alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}"/>
+              {%- endif %}
+            </div>
+          </a>
+        {%- endfor %}
+      </div>
+    </section>
+  </nav>
+</div>

@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Canterbury Theatre Guild
+theme: canterbury-theatre-guild
+logo:
+  src: /assets/images/canterbury-theatre-guild/canterbury-theatre-guild-logo.svg
+tags: other-work
+---
+
+<article class="container">
+  <div class="content mx-auto">
+    <h1>{{ title }}</h1>
+    <p>
+      <a href="https://www.canterburytheatreguild.com/">Canterbury Theatre Guild</a> is a not-for-profit community based musical theatre group where members of the community are welcome to join and participate in putting on a musical, concert and/or cabaret once or twice a year.</p>
+    <p>I was the Marketing Manager at Canterbury Theatre Guild until April 2019 and was responsible for promoting our events to the community. I designed a wide range of promotional material for the guild, ranging from tickets to programs, digital advertising, videos and the website.</p>
+  </div>
+  <div class="p-3 mx-auto">
+    <img class="img-fluid shadow" width="1280" height="800" src="/assets/images/canterbury-theatre-guild/canterbury-theatre-guild-home.png" srcset="/assets/images/canterbury-theatre-guild/canterbury-theatre-guild-home@2x.png 2x" alt="Canterbury Theatre Guild Homepage Screenshot" loading="lazy"/>
+  </div>
+  <div class="p-3 mx-auto">
+    <img class="img-fluid shadow bg-white" src="/assets/images/canterbury-theatre-guild/canterbury-theatre-guild-about.png" alt="Canterbury Theatre Guild About Page Screenshot" loading="lazy"/>
+  </div>
+</article>
+<aside class="container">
+  <h2>Projects</h2>
+  <div class="d-flex justify-content-around flex-wrap">
+    {%- for project in collections["canterbury-theatre-guild-project"] %}
+      <a class="project {{ project.data.theme }}" href="{{ project.url }}">
+        <strong class="project-heading">{{ project.data.title }}</strong>
+        <div class="circle">
+          {% if project.data.logo.src -%}
+            <img class="img-fluid w-100 valign" src="{{ project.data.logo.src }}" width="120" height="120" alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}" loading="lazy"/>
+          {%- endif %}
+        </div>
+      </a>
+    {%- endfor %}
+  </div>
+</aside>

@@ -1,0 +1,269 @@
+:root {
+  /* Colors */
+  --orange: #ff4f00;
+  --primary: var(--orange);
+  --surface: #fff;
+  --background: #fff;
+  /* Projects */
+  --adlight: #00999e;
+  --prioritab: #212121;
+  --sydney-secondary-college: #233f9a;
+  --grammarly-service-analysis: #15c39a;
+  --guitar-diy: #960808;
+  --cetaceans: #0078bd;
+  --generative: #ed215b;
+  --volunteering-at-greenpeace: #049a4a;
+  --canterbury-theatre-guild: #007597;
+  --little-mermaid: #00778f;
+  --steel-magnolias: #9c27b0;
+  --avenue-q: #f06f33;
+  --nine-to-five: #ed354b;
+  --pledge-protect: #f34a63;
+  --astronome: #0b093e;
+  /* Values */
+  --footer-height: 8rem;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5rem;
+  margin-bottom: var(--footer-height);
+  letter-spacing: 0.03125rem;
+  background-color: var(--background);
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--footer-height);
+  background-color: var(--surface);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Aleo";
+  font-weight: bold;
+}
+
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after,
+.edgedot::after {
+  content: ".";
+  color: var(--primary);
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 117%;
+  letter-spacing: -0.09375rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+  line-height: 120%;
+  letter-spacing: -0.03125rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 117%;
+}
+
+h4 {
+  font-size: 2.125rem;
+  line-height: 106%;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0.01125rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 120%;
+  letter-spacing: 0.009375rem;
+}
+
+a {
+  transition: 100ms;
+  color: var(--primary);
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+.navbar-brand {
+  font-family: "Aleo";
+}
+
+.transition-fade {
+  transition: 150ms;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  transition: 75ms;
+  opacity: 0;
+}
+
+.content {
+  max-width: 40rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.masthead {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--primary);
+}
+
+.masthead a {
+  color: inherit;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  height: 20rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  transition: 200ms;
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25),
+    0.5rem 0.5rem var(--primary), 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+  transition: 250ms;
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.project-dark {
+  background-color: rgba(0, 0, 0, 0.54);
+}
+
+.project-dark:hover {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+.project-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
+}
+
+.circle {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pledge-protect {
+  --primary: var(--pledge-protect);
+}
+
+.adlight {
+  --primary: var(--adlight);
+}
+
+.astronome {
+  --primary: var(--astronome);
+}
+
+.canterbury-theatre-guild {
+  --primary: var(--canterbury-theatre-guild);
+}
+
+.nine-to-five {
+  --primary: var(--nine-to-five);
+}
+
+.avenue-q {
+  --primary: var(--avenue-q);
+}
+
+.little-mermaid {
+  --primary: var(--little-mermaid);
+}
+
+.steel-magnolias {
+  --primary: var(--steel-magnolias);
+}
+
+.cetaceans {
+  --primary: var(--cetaceans);
+}
+
+.generative {
+  --primary: var(--generative);
+}
+
+.grammarly-service-analysis {
+  --primary: var(--grammarly-service-analysis);
+}
+
+.guitar-diy {
+  --primary: var(--guitar-diy);
+}
+
+.prioritab {
+  --primary: var(--prioritab);
+}
+
+.sydney-secondary-college {
+  --primary: var(--sydney-secondary-college);
+}
+
+.volunteering-at-greenpeace {
+  --primary: var(--volunteering-at-greenpeace);
+}

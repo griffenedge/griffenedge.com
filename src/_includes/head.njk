@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {%- if title %}{{ title }}
+      {%- if tagline %}: {{ tagline }}
+      {%- endif %} | {% endif %}{{ metadata.title }} - {{ metadata.tagline -}}
+  </title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ff4f00">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/style/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="/style/custom.css">
+</head>

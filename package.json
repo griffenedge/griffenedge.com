@@ -1,0 +1,32 @@
+{
+  "name": "griffenedge.com",
+  "description": "Personal website of @griffenedge",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/griffenedge/griffenedge.com.git"
+  },
+  "author": {
+    "name": "Griffen Edge",
+    "email": "griffen@griffenedge.com",
+    "url": "https://www.griffenedge.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/griffenedge/griffenedge.com/issues"
+  },
+  "homepage": "https://github.com/griffenedge/griffenedge.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.1.0",
+    "luxon": "^1.25.0"
+  }
+}

@@ -16,7 +16,7 @@ eleventyNavigation:
     <section id="case-studies" class="mt-5">
       <h2>Case studies</h2>
       <div class="d-flex justify-content-around flex-wrap">
-        {%- for project in collections["case-study"] | reverse %}
+        {%- for project in collections["case-study"] %}
           <a class="project {{ project.data.theme }}" href="{{ project.url }}">
             <strong class="project-heading">{{ project.data.title }}</strong>
             <div class="circle">
@@ -31,7 +31,7 @@ eleventyNavigation:
     <section class="mt-5">
       <h2>Other work</h2>
       <div class="d-flex justify-content-around flex-wrap">
-        {%- for project in collections["other-work"] | reverse %}
+        {%- for project in collections["other-work"] %}
           <a class="project {{ project.data.theme }}" href="{{ project.url }}">
             <strong class="project-heading">{{ project.data.title }}</strong>
             <div class="circle">

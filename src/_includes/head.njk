@@ -4,19 +4,20 @@
   <title>
     {%- if title %}{{ title }}{%- if tagline %}: {{ tagline }}{%- endif %} | {% endif %}{{ metadata.title }} - {{ metadata.tagline -}}
   </title>
+  <link rel="stylesheet" href="/style/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="/style/custom.css">
   <meta name="description" content="{{ description or metadata.description }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#ff4f00">
   <meta property="og:title" content="{%- if title %}{{ title }}{%- if tagline %}: {{ tagline }}{%- endif %}{% else %}{{ metadata.title }} - {{ metadata.tagline -}}{%- endif %}">
   <meta property="og:description" content="{{ description or metadata.description }}">
   <meta property="og:image" content="{{ metadata.url }}{{ social.img.src or metadata.social.img.src }}">
   <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ metadata.title }}">
+  <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@griffenedge">
-  <link rel="stylesheet" href="/style/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="/style/custom.css">
+  <meta name="theme-color" content="#ff4f00">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>

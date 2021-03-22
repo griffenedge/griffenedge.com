@@ -1,0 +1,19 @@
+{
+  "short_name": "Griffen Edge",
+  "name": "Griffen Edge - User Experience Designer",
+  "icons": [
+    {
+      "src": "/assets/images/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ff4f00"
+}

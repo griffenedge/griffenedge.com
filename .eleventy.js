@@ -10,8 +10,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginNavigation);
 
   // Specify files or directories for Eleventy to copy to output.
-  eleventyConfig.addPassthroughCopy("src/style");
-  eleventyConfig.addPassthroughCopy("src/script");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/manifest.webmanifest");
   eleventyConfig.addPassthroughCopy("src/robots.txt");

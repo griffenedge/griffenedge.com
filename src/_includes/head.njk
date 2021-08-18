@@ -6,8 +6,8 @@
       {%- if tagline %}: {{ tagline }}
       {%- endif %} | {% endif %}{{ metadata.title }} - {{ metadata.tagline -}}
   </title>
-  <link rel="stylesheet" href="/style/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="/style/custom.css">
+  <link rel="stylesheet" href="/assets/style/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/style/custom.css">
   <meta name="description" content="{{ description or metadata.description }}">
   <meta property="og:title" content="{%- if title %}{{ title }}{%- if tagline %}: {{ tagline }}{%- endif %}{% else %}{{ metadata.title }} - {{ metadata.tagline -}}{%- endif %}">
   <meta property="og:description" content="{{ description or metadata.description }}">

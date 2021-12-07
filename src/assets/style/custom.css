@@ -96,12 +96,9 @@
   --nine-to-five: #ed354b;
   --pledge-protect: #f34a63;
   --astronome: #0b093e;
-  /* Values */
-  --footer-height: 8rem;
 }
 
-html {
-  position: relative;
+html, body {
   min-height: 100%;
 }
 
@@ -109,20 +106,17 @@ body {
   font-family: "Lato", ui-sans-serif, sans-serif;
   font-weight: normal;
   font-style: normal;
-  margin-bottom: var(--footer-height);
   letter-spacing: 0.03125rem;
   background-color: var(--background);
 }
 
 .footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: sticky;
+  top: 100vh;
   display: flex;
+  margin-top: 2rem;
   align-items: center;
   justify-content: center;
-  height: var(--footer-height);
   background-color: var(--surface);
 }
 

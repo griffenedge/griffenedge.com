@@ -169,12 +169,16 @@ h6 {
 }
 
 a {
-  transition: 100ms;
+  transition: 50ms;
   color: var(--primary);
 }
 
 .bg-black {
   background-color: #000;
+a:hover {
+  transition: 100ms;
+  color: var(--primary);
+  filter: brightness(0.6)
 }
 
 .navbar {
@@ -241,7 +245,6 @@ html.is-animating .transition-fade {
 .project-card:hover {
   transition: 250ms;
   transform: scale(1.05);
-  filter: brightness(105%);
 }
 
 .project-card__heading {

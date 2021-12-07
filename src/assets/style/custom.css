@@ -228,54 +228,59 @@ html.is-animating .transition-fade {
   color: inherit;
 }
 
-.project {
+.projects {
+  display: grid;
+  padding: 1rem 0 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
   position: relative;
-  width: 100%;
-  max-width: 20rem;
-  height: 20rem;
-  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-color: var(--surface);
+  background-clip: border-box;
+  border-radius: 1rem;
   padding: 1rem;
   transition: 200ms;
-  border-radius: 1rem;
-  background: var(--surface);
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25),
     0.5rem 0.5rem var(--primary), 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
-.project:hover {
+.project-card:hover {
   transition: 250ms;
   transform: scale(1.05);
-  background-color: rgba(0, 0, 0, 0.04);
+  filter: brightness(105%);
 }
 
-.project-dark {
-  background-color: rgba(0, 0, 0, 0.54);
-}
-
-.project-dark:hover {
-  background-color: rgba(0, 0, 0, 0.87);
-}
-
-.project-heading {
-  font-size: 1.5rem;
+.project-card__heading {
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  left: 1rem;
-  margin: 0;
 }
 
-.circle {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
+.project-card__heading a:link {
+  text-decoration: none;
+}
+
+/* .project-card__heading a:hover {
+  color: #fff;
+  background-color: var(--primary);
+} */
+
+.project-card__circle {
+  display: flex;
+  width: 9rem;
+  height: 9rem;
   padding: 1.25rem;
   border-radius: 50%;
   background-color: var(--primary);
+  align-self: center;
+  order: -1;
 }
 
 .valign {

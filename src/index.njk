@@ -15,33 +15,19 @@ eleventyNavigation:
   <nav aria-label="Projects">
     <section id="case-studies" class="mt-5">
       <h2>Case studies</h2>
-      <div class="d-flex justify-content-around flex-wrap">
+      <ul class="projects">
         {%- for project in collections["case-study"] %}
-          <a class="project {{ project.data.theme }}" href="{{ project.url }}">
-            <strong class="project-heading">{{ project.data.title }}</strong>
-            <div class="circle">
-              {% if project.data.logo.src -%}
-                <img class="img-fluid w-100 valign" src="{{ project.data.logo.src }}" width="120" height="120" alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}"/>
-              {%- endif %}
-            </div>
-          </a>
+          {% include "project-card.njk" %}
         {%- endfor %}
-      </div>
+      </ul>
     </section>
     <section class="mt-5">
       <h2>Other work</h2>
-      <div class="d-flex justify-content-around flex-wrap">
+      <ul class="projects">
         {%- for project in collections["other-work"] %}
-          <a class="project {{ project.data.theme }}" href="{{ project.url }}">
-            <strong class="project-heading">{{ project.data.title }}</strong>
-            <div class="circle">
-              {% if project.data.logo.src -%}
-                <img class="img-fluid w-100 valign" src="{{ project.data.logo.src }}" width="120" height="120" alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}"/>
-              {%- endif %}
-            </div>
-          </a>
+          {% include "project-card.njk" %}
         {%- endfor %}
-      </div>
+      </ul>
     </section>
   </nav>
 </div>

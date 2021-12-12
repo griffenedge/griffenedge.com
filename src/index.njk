@@ -16,17 +16,17 @@ eleventyNavigation:
     <section id="case-studies" class="mt-5">
       <h2>Case studies</h2>
       <ul class="projects">
-        {%- for project in collections["case-study"] %}
+        {%- for project in collections["case-study"] | reverse -%}
           {% include "project-card.njk" %}
-        {%- endfor %}
+        {%- endfor -%}
       </ul>
     </section>
     <section class="mt-5">
       <h2>Other work</h2>
       <ul class="projects">
-        {%- for project in collections["other-work"] %}
+        {%- for project in collections["other-work"] | reverse -%}
           {% include "project-card.njk" %}
-        {%- endfor %}
+        {%- endfor -%}
       </ul>
     </section>
   </nav>

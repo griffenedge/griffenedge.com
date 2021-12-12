@@ -6,6 +6,7 @@ theme: canterbury-theatre-guild
 logo:
   src: /assets/images/canterbury-theatre-guild/canterbury-theatre-guild-logo.svg
 tags: other-work
+date: 2017-07-22
 ---
 
 <article class="container">
@@ -25,8 +26,8 @@ tags: other-work
 <aside class="container">
   <h2>Projects</h2>
   <ul class="projects">
-    {%- for project in collections["canterbury-theatre-guild-project"] %}
+    {%- for project in collections["canterbury-theatre-guild-project"] | reverse -%}
       {% include "project-card.njk" %}
-    {%- endfor %}
+    {%- endfor -%}
   </ul>
 </aside>

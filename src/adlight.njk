@@ -13,52 +13,63 @@ date: 2018-11-06
 <article>
   <section class="masthead text-light">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-9 col-xl-8 mx-auto">
-          <h1>{{ title }}</h1>
-          <p>{{ shortdesc }}</p>
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="h6">Type</h2>
-              <p>Product design project for <a href="https://www.sydney.edu.au/units/DECO1013">DECO1013: Physical Computing</a> at the University of Sydney</p>
-            </div>
-            <div class="col">
-              <h2 class="h6">Duration</h2>
-              <p>August to November 2018</p>
-            </div>
+      <div class="content">
+        <h1>{{ title }}</h1>
+        <p>{{ shortdesc }}</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="h6">Type</h2>
+            <p>Product design project for <a href="https://www.sydney.edu.au/units/DECO1013">DECO1013: Physical Computing</a> at the University of Sydney</p>
           </div>
-          <h2 class="h6">Role</h2>
-          <p>I was the lead designer on a team comprised of 4 designers (myself, <a href="https://www.margauxthw.com/" rel="friend met">Margaux Thwaites</a>, Ebony McCue-Shore &amp; <a href="http://www.christiancerdadesigns.com/" rel="friend met">Christian Cerda</a>). My responsibilities included research, ideation, 3D modelling, fabrication and finishing, video production, Arduino programming and UI design.</p>
-          <h2>Summary</h2>
-          <p>With Australians cycling less often and for less time than in 2011, adLight sought to promote ridership and enhance the quality of each and every bike ride by focusing on safety, affordability and convenience.</p>
+          <div class="col">
+            <h2 class="h6">Duration</h2>
+            <p>August to November 2018</p>
+          </div>
         </div>
+        <h2 class="h6">Role</h2>
+        <p><strong>Lead designer</strong> on a team of 4 (myself, <a href="https://www.margauxthw.com/" rel="friend met">Margaux Thwaites</a>, <a href="https://www.ebonymccueshore.com/" rel="friend met">Ebony McCue-Shore</a> &amp; <a href="http://www.christiancerdadesigns.com/" rel="friend met">Christian Cerda</a>). My responsibilities included research, ideation, 3D modelling, fabrication and finishing, video production, Arduino programming and UI design.</p>
+        <h2>Summary</h2>
+        <p>With Australians cycling less often and for less time than in 2011, adLight sought to promote ridership and enhance the quality of each and every bike ride by focusing on safety, affordability and convenience.</p>
       </div>
     </div>
   </section>
   <div class="container">
-    <div class="my-5">
-      <div class="ratio ratio-16x9 shadow">
-        <iframe title="adLight: Smart Bicycle Light - YouTube video player" src="https://www.youtube-nocookie.com/embed/2Rv22xMiSu4?rel=0&origin=https://www.griffenedge.com" width="640" height="360" allowfullscreen loading="lazy"></iframe>
+    <div class="content">
+      <div class="ratio ratio-16x9 shadow my-5">
+        <iframe
+          title="adLight: Smart Bicycle Light - YouTube video player"
+          src="https://www.youtube-nocookie.com/embed/2Rv22xMiSu4?rel=0&origin=https://www.griffenedge.com"
+          width="640"
+          height="360"
+          allowfullscreen
+          loading="lazy"
+          >
+        </iframe>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-9 col-xl-8 mx-auto">
-        <h2>Research</h2>
-        <p>Cycling is a healthy form of transport that can have positive impacts on levels of physical activity, obesity rates, cardiovascular health, and morbidity (Pucher et al, 2010). These benefits suggest that cycling should be encouraged and steps should be taken to remove possible negatives to increase ridership.</p>
-        <p>Bicycle safety equipment is important in protecting riders from and in crashes, however current equipment like helmets have low use in jurisdictions that do not require them (Everett et al, 2001). In jurisdictions that do require safety equipment, this translates to low use of bicycles, and hence a decrease in population health (Dutch Fietsersbond, 2012).</p>
-        <p>Several products have been designed to reduce the downsides of bicycle safety equipment through physical computing, such as the <strong>Hövding</strong>, an inflatable airbag that uses motion sensors to inflate in the event of a crash, and the <strong>Garmin Varia</strong> series of lights that use sensors to adjust beam intensity and save battery while riding. These products enhance rider safety and may encourage the population to ride more, however, their high prices limit their usefulness for the everyday rider.</p>
-        <h2>Concept</h2>
-        <p>A smart bike light that is cost-effective while still providing increased safety over non-smart devices. It makes use of affordable parts including:</p>
-        <ul>
-          <li>the Inertial Measurement Unit (IMU) from the Intel Genuino 101 to measure the velocity of the bicycle to detect when the light should turn on and off.</li>
-          <li>an LED Module as the light source. The LED is dimmable and mapped to the speed of the bike, so the faster the bike, the brighter the LED.</li>
-          <li>an Ambient Light Sensor to read the ambient light to determine when the LED should be turned on. During the day the light does not turn on, and at night it will.</li>
-          <li>a Digital Push Button to serve as a manual override of the Ambient Light Sensor, allowing the LED to be turned off whenever the user wishes.</li>
-        </ul>
-        <p>These features mean the rider doesn’t have to think about when to turn on their light, as it will turn on automatically. This increases safety by allowing riders to concentrate on riding and ensuring they can be seen in the dark, reducing crashes.</p>
-        <h3>Award</h3>
-        <img class="img-fluid shadow" src="/assets/images/adlight/deco1013-physical-computing-best-product-design-award-600w.jpg" srcset="/assets/images/adlight/deco1013-physical-computing-best-product-design-award-600w.jpg 600w, /assets/images/adlight/deco1013-physical-computing-best-product-design-award-900w.jpg 900w, /assets/images/adlight/deco1013-physical-computing-best-product-design-award-1200w.jpg 1200w, /assets/images/adlight/deco1013-physical-computing-best-product-design-award-1800w.jpg 1800w" alt="Best Product Design Award - DECO1013: Physical Computing from the University of Sydney School of Architecture, Design and Planning" loading="lazy"/>
-      </div>
+      <h2>Research</h2>
+      <p>Cycling is a healthy form of transport that can have positive impacts on levels of physical activity, obesity rates, cardiovascular health, and morbidity (Pucher et al, 2010). These benefits suggest that cycling should be encouraged and steps should be taken to remove possible negatives to increase ridership.</p>
+      <p>Bicycle safety equipment is important in protecting riders from and in crashes, however current equipment like helmets have low use in jurisdictions that do not require them (Everett et al, 2001). In jurisdictions that do require safety equipment, this translates to low use of bicycles, and hence a decrease in population health (Dutch Fietsersbond, 2012).</p>
+      <p>Several products have been designed to reduce the downsides of bicycle safety equipment through physical computing, such as the <strong>Hövding</strong>, an inflatable airbag that uses motion sensors to inflate in the event of a crash, and the <strong>Garmin Varia</strong> series of lights that use sensors to adjust beam intensity and save battery while riding. These products enhance rider safety and may encourage the population to ride more, however, their high prices limit their usefulness for the everyday rider.</p>
+      <h2>Concept</h2>
+      <p>A smart bike light that is cost-effective while still providing increased safety over non-smart devices. It makes use of affordable parts including:</p>
+      <ul>
+        <li>the Inertial Measurement Unit (IMU) from the Intel Genuino 101 to measure the velocity of the bicycle to detect when the light should turn on and off.</li>
+        <li>an LED Module as the light source. The LED is dimmable and mapped to the speed of the bike, so the faster the bike, the brighter the LED.</li>
+        <li>an Ambient Light Sensor to read the ambient light to determine when the LED should be turned on. During the day the light does not turn on, and at night it will.</li>
+        <li>a Digital Push Button to serve as a manual override of the Ambient Light Sensor, allowing the LED to be turned off whenever the user wishes.</li>
+      </ul>
+      <p>These features mean the rider doesn’t have to think about when to turn on their light, as it will turn on automatically. This increases safety by allowing riders to concentrate on riding and ensuring they can be seen in the dark, reducing crashes.</p>
+      <h3>Award</h3>
+      <img 
+        class="img-fluid shadow"
+        src="/assets/images/adlight/deco1013-physical-computing-best-product-design-award-600w.jpg"
+        srcset="/assets/images/adlight/deco1013-physical-computing-best-product-design-award-600w.jpg 600w, 
+          /assets/images/adlight/deco1013-physical-computing-best-product-design-award-900w.jpg 900w, 
+          /assets/images/adlight/deco1013-physical-computing-best-product-design-award-1200w.jpg 1200w, 
+          /assets/images/adlight/deco1013-physical-computing-best-product-design-award-1800w.jpg 1800w"
+        alt="Best Product Design Award - DECO1013: Physical Computing"
+        loading="lazy"
+      />
     </div>
   </div>
 </article>

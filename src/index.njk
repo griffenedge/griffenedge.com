@@ -6,14 +6,14 @@ eleventyNavigation:
 ---
 
 <div class="container">
-  <section class="mt-5 col-lg-9 col-xl-8 mx-auto">
+  <section class="content my-5">
     <h1>{{ metadata.title }}</h1>
     <h2>{{ metadata.tagline }}</h2>
     <p class="lead">I'm passionate about bringing a holistic design approach to big problems in order to make a difference in people’s lives.</p>
     <a class="btn btn-dark shadow-sm" href="/about/">Find out more about me!</a>
   </section>
   <nav aria-label="Projects">
-    <section id="case-studies" class="mt-5">
+    <section id="case-studies" class="my-5">
       <h2>Case studies</h2>
       <ul class="projects">
         {%- for project in collections["case-study"] | reverse -%}
@@ -21,7 +21,7 @@ eleventyNavigation:
         {%- endfor -%}
       </ul>
     </section>
-    <section class="mt-5">
+    <section class="my-5">
       <h2>Other work</h2>
       <ul class="projects">
         {%- for project in collections["other-work"] | reverse -%}

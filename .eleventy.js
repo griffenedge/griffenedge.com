@@ -4,7 +4,6 @@ const eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventyPluginNavigation = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
-
   // Plugins are custom code that Eleventy can import into a project from an external repository.
   eleventyConfig.addPlugin(eleventyPluginRss);
   eleventyConfig.addPlugin(eleventyPluginNavigation);
@@ -16,8 +15,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
   // Browsersync Overrides
@@ -25,7 +24,7 @@ module.exports = function (eleventyConfig) {
     callbacks: {
       ready: function (err, browserSync) {
         browserSync.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync('dist/404.html');
+          const content_404 = fs.readFileSync("dist/404.html");
           // Add 404 http status code in request header.
           res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
           // Provides the 404 content without redirect.
@@ -35,14 +34,14 @@ module.exports = function (eleventyConfig) {
       },
     },
     ui: false,
-    ghostMode: false
+    ghostMode: false,
   });
 
   // Return Config object
   return {
     dir: {
       input: "src",
-      output: "dist"
-    }
+      output: "dist",
+    },
   };
 };

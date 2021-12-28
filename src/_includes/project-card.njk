@@ -15,6 +15,10 @@
       class="img-fluid" 
       src="{{ project.data.logo.src }}" 
       alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}"
-      />
+      width="96"
+      height="96"
+      loading="lazy"
+      decoding="async"
+    />
   </div>
 </li>

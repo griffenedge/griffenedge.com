@@ -12,8 +12,19 @@ date: 2018-06-04
 <article class="container">
   <div class="content">
     <h1>{{ title }}</h1>
-    <p>A university project to redesign the Volunteering at Greenpeace Asia-Pacific brand.</p>
-    <img class="img-fluid shadow mt-5" src="/assets/images/volunteering-at-greenpeace/volunteering-at-greenpeace-welcome-how-to.png" srcset="/assets/images/volunteering-at-greenpeace/volunteering-at-greenpeace-welcome-how-to@2x.png 2x" alt="Volunteering at Greenpeace Welcome and How To">
-    <img class="img-fluid shadow mb-5" src="/assets/images/volunteering-at-greenpeace/volunteering-at-greenpeace-whos-who-where-to.png" srcset="/assets/images/volunteering-at-greenpeace/volunteering-at-greenpeace-whos-who-where-to@2x.png 2x" alt="Volunteering at Greenpeace Who's Who and Where To">
+    <p>
+      A university project to redesign the Volunteering at Greenpeace Asia-Pacific brand.
+    </p>
+    {% image
+      "/assets/images/volunteering-at-greenpeace/volunteering-at-greenpeace-welcome-how-to.png",
+      "Volunteering at Greenpeace Welcome and How To",
+      "img-fluid shadow mt-5",
+      "eager"
+    %}
+    {% image
+      "/assets/images/volunteering-at-greenpeace/volunteering-at-greenpeace-whos-who-where-to.png",
+      "Volunteering at Greenpeace Who's Who and Where To",
+      "img-fluid shadow mb-5"
+    %}
   </div>
 </article>

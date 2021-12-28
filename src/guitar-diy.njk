@@ -14,7 +14,16 @@ date: 2018-11-08
     <h1>{{ title }}</h1>
     <p>A university project to teach people the basics of guitar maintenance and improvements.</p>
     <p>Check out the <a href="https://guitardiy.github.io">Guitar DIY site</a>!</p>
-    <img class="img-fluid shadow my-5" src="/assets/images/guitar-diy/guitar-diy-screenshot-home-600w.png" srcset="/assets/images/guitar-diy/guitar-diy-screenshot-home-600w.png 600w, /assets/images/guitar-diy/guitar-diy-screenshot-home-900w.png 900w, /assets/images/guitar-diy/guitar-diy-screenshot-home-1200w.png 1200w, /assets/images/guitar-diy/guitar-diy-screenshot-home-1800w.png 1800w" alt="Guitar DIY Homepage Screenshot">
-    <img class="img-fluid shadow my-5" src="/assets/images/guitar-diy/guitar-diy-screenshot-replacing-tuners-600w.png" srcset="/assets/images/guitar-diy/guitar-diy-screenshot-replacing-tuners-600w.png 600w, /assets/images/guitar-diy/guitar-diy-screenshot-replacing-tuners-900w.png 900w, /assets/images/guitar-diy/guitar-diy-screenshot-replacing-tuners-1200w.png 1200w, /assets/images/guitar-diy/guitar-diy-screenshot-replacing-tuners-1800w.png 1800w" alt="Guitar DIY Replacing Tuners Tutorial Screenshot">
+    {% image
+      "/assets/images/guitar-diy/guitar-diy-screenshot-home.png",
+      "Guitar DIY Homepage",
+      "img-fluid shadow my-5",
+      "eager"
+    %}
+    {% image
+      "/assets/images/guitar-diy/guitar-diy-screenshot-replacing-tuners.png",
+      "Guitar DIY Replacing Tuners Tutorial",
+      "img-fluid shadow"
+    %}
   </div>
 </article>

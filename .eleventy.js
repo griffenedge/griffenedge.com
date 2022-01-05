@@ -47,6 +47,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginRss);
   eleventyConfig.addPlugin(eleventyPluginNavigation);
 
+  eleventyConfig.addShortcode("currentyear", () => `${new Date().getFullYear()}`);
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Specify files or directories for Eleventy to copy to output.

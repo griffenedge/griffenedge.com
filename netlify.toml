@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npx @11ty/eleventy"
+  command = "npm run build"
 
 [[redirects]]
   from = "/projects/canterburytheatreguild/avenueq/*"

@@ -3,11 +3,11 @@
   "description": "Personal website of @griffenedge",
   "private": true,
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+		"build": "npx @11ty/eleventy",
+		"start": "npx @11ty/eleventy --serve --quiet",
+		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",

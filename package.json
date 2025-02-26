@@ -25,11 +25,11 @@
   "homepage": "https://github.com/griffenedge/griffenedge.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^5.0.0",
+    "@11ty/eleventy-img": "^6.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
     "luxon": "^3.5.0",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.2",
     "prettier-plugin-jinja-template": "^2.0.0"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "rules": {
+    "font-family-name-quotes": "always-unless-keyword",
+    "selector-class-pattern": null
+  }
+}

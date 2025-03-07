@@ -87,11 +87,11 @@
 
 :root {
   /* Colors */
-  --orange: #ff4f00;
-  --primary: var(--orange);
-  --surface: #fff;
-  --background: #fff;
-  --bs-body-color: #231917;
+  --primary: #ff4f00;
+  --surface: #fff8f6;
+  --background: #fff8f6;
+  --bs-body-color: #281712;
+  --bs-body-color-rgb: 40, 23, 18;
 
   /* Projects */
   --adlight: #00999e;

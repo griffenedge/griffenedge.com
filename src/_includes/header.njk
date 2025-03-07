@@ -5,7 +5,12 @@
       <ul class="navbar-nav">
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="nav-item">
-            <a class="nav-link{% if entry.url == page.url %} active{% endif %}"{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url }}">{{ entry.title }}</a>
+            <a
+              class="nav-link {% if entry.url == page.url %}active{% endif %}"
+              {% if entry.url == page.url %}aria-current="page"{% endif %}
+              href="{{ entry.url }}"
+              >{{ entry.title }}</a
+            >
           </li>
         {%- endfor %}
       </ul>

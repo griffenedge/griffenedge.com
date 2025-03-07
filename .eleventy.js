@@ -10,7 +10,7 @@ async function imageShortcode(
   alt,
   cls = null,
   loading = "lazy",
-  sizes = "(min-width: 42em) 42em, 100vw"
+  sizes = "(min-width: 42em) 42em, 100vw",
 ) {
   const { dir: imgDir } = path.parse(src);
   const fullSrc = path.join("src", src);
@@ -28,13 +28,7 @@ async function imageShortcode(
     urlPath: imgDir,
   });
 
-  let imageAttributes = {
-    class: cls,
-    alt,
-    sizes,
-    loading,
-    decoding: "async",
-  };
+  let imageAttributes = { class: cls, alt, sizes, loading, decoding: "async" };
 
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
   return eleventyImage.generateHTML(metadata, imageAttributes, {
@@ -47,7 +41,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginRss);
   eleventyConfig.addPlugin(eleventyPluginNavigation);
 
-  eleventyConfig.addShortcode("currentyear", () => `${new Date().getFullYear()}`);
+  eleventyConfig.addShortcode(
+    "currentyear",
+    () => `${new Date().getFullYear()}`,
+  );
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Specify files or directories for Eleventy to copy to output.
@@ -62,10 +59,5 @@ module.exports = function (eleventyConfig) {
   });
 
   // Return Config object
-  return {
-    dir: {
-      input: "src",
-      output: "dist",
-    },
-  };
+  return { dir: { input: "src", output: "dist" } };
 };

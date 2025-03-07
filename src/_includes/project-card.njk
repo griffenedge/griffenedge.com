@@ -1,8 +1,10 @@
 <li class="card project-card {{ project.data.theme }}">
   <div class="card-body">
-    <h3 class="card-title project-card__heading"><a class="stretched-link" href="{{ project.url }}">
-      {{- project.data.title -}}
-    </a></h3>
+    <h3 class="card-title project-card__heading">
+      <a class="stretched-link" href="{{ project.url }}">
+        {{- project.data.title -}}
+      </a>
+    </h3>
     {% if project.data.tagline -%}
       <p class="card-subtitle text-muted">{{ project.data.tagline }}</p>
     {%- endif %}
@@ -11,10 +13,15 @@
     {%- endif %}
   </div>
   <div class="project-card__circle">
-    <img 
-      class="img-fluid" 
-      src="{{ project.data.logo.src }}" 
-      alt="{% if project.data.logo.alt %}{{project.data.logo.alt}}{% else %}{{ project.data.title }} logo{% endif %}"
+    <img
+      class="img-fluid"
+      src="{{ project.data.logo.src }}"
+      alt="{% if project.data.logo.alt %}
+        {{ project.data.logo.alt }}
+      {% else %}
+        {{ project.data.title }}
+        logo
+      {% endif %}"
       width="96"
       height="96"
       loading="lazy"

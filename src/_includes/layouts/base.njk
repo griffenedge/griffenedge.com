@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
-
   {% include "head.njk" %}
 
   <body>
-    <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+    <a class="visually-hidden-focusable" href="#main-content"
+      >Skip to main content</a
+    >
 
     {% include "header.njk" %}
 
-    <main id="main-content"{% if theme %} class="{{ theme }}"{% endif %}>
+    <main id="main-content" {% if theme %}class="{{ theme }}"{% endif %}>
       {{ content | safe }}
     </main>
-    
+
     {% include "footer.njk" %}
 
     <script src="/assets/script/vendor/bootstrap.bundle.min.js"></script>

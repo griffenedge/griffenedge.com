@@ -4,6 +4,7 @@ import path from "path";
 import eleventyPluginRss from "@11ty/eleventy-plugin-rss";
 import eleventyPluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import pluginImageAvatar from "./_11ty/imageAvatarPlugin.js";
 
 export default function (eleventyConfig) {
   // Plugins are custom code that Eleventy can import into a project from an external repository.
@@ -26,6 +27,7 @@ export default function (eleventyConfig) {
       },
     },
   });
+  eleventyConfig.addPlugin(pluginImageAvatar);
 
   eleventyConfig.addShortcode(
     "currentyear",

@@ -3,49 +3,34 @@ const fs = require("fs");
 const path = require("path");
 const eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventyPluginNavigation = require("@11ty/eleventy-navigation");
-const eleventyImage = require("@11ty/eleventy-img");
-
-async function imageShortcode(
-  src,
-  alt,
-  cls = null,
-  loading = "lazy",
-  sizes = "(min-width: 42em) 42em, 100vw",
-) {
-  const { dir: imgDir } = path.parse(src);
-  const fullSrc = path.join("src", src);
-
-  let metadata = await eleventyImage(fullSrc, {
-    widths: [600, 900, 1200, 1800],
-    formats: ["avif", "webp", "jpeg"],
-    filenameFormat: function (id, src, width, format) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
-
-      return `${name}-${width}w.${format}`;
-    },
-    outputDir: path.join("dist", imgDir),
-    urlPath: imgDir,
-  });
-
-  let imageAttributes = { class: cls, alt, sizes, loading, decoding: "async" };
-
-  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-  return eleventyImage.generateHTML(metadata, imageAttributes, {
-    whitespaceMode: "inline",
-  });
-}
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   // Plugins are custom code that Eleventy can import into a project from an external repository.
   eleventyConfig.addPlugin(eleventyPluginRss);
   eleventyConfig.addPlugin(eleventyPluginNavigation);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    widths: [600, 900, 1200, 1800],
+    formats: ["avif", "webp", "jpeg"],
+    filenameFormat: function (src, width, format) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+
+      return `${name}-${width}w.${format}`;
+    },
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+        sizes: "(min-width: 42em) 42em, 100vw",
+      },
+    },
+  });
 
   eleventyConfig.addShortcode(
     "currentyear",
     () => `${new Date().getFullYear()}`,
   );
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Specify files or directories for Eleventy to copy to output.
   eleventyConfig.addPassthroughCopy("src/assets");

@@ -2,6 +2,7 @@
   "name": "griffenedge.com",
   "description": "Personal website of @griffenedge",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve --quiet",

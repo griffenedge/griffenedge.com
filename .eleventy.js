@@ -1,11 +1,11 @@
-const { DateTime } = require("luxon");
-const fs = require("fs");
-const path = require("path");
-const eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
-const eleventyPluginNavigation = require("@11ty/eleventy-navigation");
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+import { DateTime } from "luxon";
+import fs from "fs";
+import path from "path";
+import eleventyPluginRss from "@11ty/eleventy-plugin-rss";
+import eleventyPluginNavigation from "@11ty/eleventy-navigation";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // Plugins are custom code that Eleventy can import into a project from an external repository.
   eleventyConfig.addPlugin(eleventyPluginRss);
   eleventyConfig.addPlugin(eleventyPluginNavigation);
@@ -45,4 +45,4 @@ module.exports = function (eleventyConfig) {
 
   // Return Config object
   return { dir: { input: "src", output: "dist" } };
-};
+}

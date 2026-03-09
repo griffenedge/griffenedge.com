@@ -1,7 +1,14 @@
 {
-  "plugins": ["prettier-plugin-jinja-template"],
-
+  "plugins": [
+    "@shopify/prettier-plugin-liquid",
+    "prettier-plugin-jinja-template"
+  ],
   "overrides": [
-    { "files": ["*.njk"], "options": { "parser": "jinja-template" } }
+    {
+      "files": ["*.njk"],
+      "options": {
+        "parser": "jinja-template"
+      }
+    }
   ]
 }

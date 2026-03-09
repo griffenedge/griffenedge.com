@@ -7,3 +7,6 @@ package-lock.json
 
 # Eleventy output directory
 /dist
+
+# Eleventy cache directory
+.cache

@@ -1,21 +1,61 @@
-<footer class="footer">
-  <div class="container text-center">
-    <p>&copy; Griffen Edge {% currentyear %}</p>
+<footer>
+  <div class="container">
     <ul class="list-inline">
+      <li>
+        <details class="dropdown">
+          <summary role="button" class="secondary">Theme</summary>
+          <ul>
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </details>
+      </li>
       <li class="list-inline-item">
         <a href="mailto:griffen@griffenedge.com" rel="me"
           >griffen@griffenedge.com</a
         >
       </li>
       <li class="list-inline-item">
-        <a href="https://github.com/griffenedge" rel="me">GitHub</a>
+        <a href="https://github.com/griffenedge" rel="me"
+          >{% indieAvatar "https://github.com/griffenedge" %} GitHub</a
+        >
       </li>
       <li class="list-inline-item">
-        <a href="https://www.linkedin.com/in/griffenedge/" rel="me">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/griffenedge/" rel="me"
+          >{% indieAvatar "https://www.linkedin.com/in/griffenedge/" %}
+          LinkedIn</a
+        >
       </li>
       <li class="list-inline-item">
         <a href="/assets/griffen-edge-resume.pdf">Résumé (PDF)</a>
       </li>
     </ul>
+
+    <ul class="list-inline">
+      <li>
+        🔤 Typeset in
+        <a
+          href="https://huertatipografica.com/en/fonts/alegreya-ht-pro"
+          style="font-family: Alegreya;"
+          >Alegreya</a
+        >
+        and
+        <a
+          href="https://huertatipografica.com/en/fonts/alegreya-sans-ht"
+          style="font-family: 'Alegreya Sans';"
+          >Alegreya Sans</a
+        >.
+      </li>
+      <li>✏️ Made with HTML, CSS, and JS.</li>
+      <li>
+        🏗️ Built with
+        <a href="https://www.11ty.dev/">Eleventy</a>
+        and hosted on
+        <a href="https://www.cloudflare.com/">Cloudflare</a>.
+      </li>
+      <li>🚀 Last deployed on {% currentdate %}.</li>
+    </ul>
+    <p>&copy; Griffen Edge {% currentyear %}. All rights reserved.</p>
   </div>
 </footer>

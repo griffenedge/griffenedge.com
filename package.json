@@ -4,11 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve --quiet",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
-    "debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-    "benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "build": "pnpx @11ty/eleventy",
+    "start": "pnpx @11ty/eleventy --serve --quiet",
+    "debug": "DEBUG=Eleventy* pnpx @11ty/eleventy",
+    "debugstart": "DEBUG=Eleventy* pnpx @11ty/eleventy --serve --quiet",
+    "benchmark": "DEBUG=Eleventy:Benchmark* pnpx @11ty/eleventy",
     "prepare": "husky"
   },
   "repository": {
@@ -30,14 +30,17 @@
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@picocss/pico": "^2.1.1",
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
     "luxon": "^3.7.2",
-    "prettier": "^3.6.2",
+    "prettier": "^3.8.1",
     "prettier-plugin-jinja-template": "^2.1.0",
-    "stylelint": "^16.24.0",
-    "stylelint-config-recess-order": "^7.3.0",
-    "stylelint-config-standard": "^37.0.0"
+    "stylelint": "^16.26.1",
+    "stylelint-config-recess-order": "^7.6.1",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-plugin-defensive-css": "^1.1.1"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

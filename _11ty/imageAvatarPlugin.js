@@ -5,7 +5,7 @@ export function getIndieAvatarUrl(url) {
 }
 
 export default function (eleventyConfig) {
-  function indieAvatarHtml(url = "", classes = "z-avatar", onerror = "") {
+  function indieAvatarHtml(url = "", classes = "inline-avatar", onerror = "") {
     let screenshotUrl = getIndieAvatarUrl(url);
     return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="60" height="60"${onerror ? ` onerror="${onerror}"` : ""} eleventy:ignore>`;
   }

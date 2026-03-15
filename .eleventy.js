@@ -1,5 +1,4 @@
 import { DateTime } from "luxon";
-import fs from "fs";
 import path from "path";
 import eleventyPluginRss from "@11ty/eleventy-plugin-rss";
 import eleventyPluginNavigation from "@11ty/eleventy-navigation";

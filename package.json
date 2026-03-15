@@ -4,11 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpx @11ty/eleventy",
-    "start": "pnpx @11ty/eleventy --serve --quiet",
-    "debug": "DEBUG=Eleventy* pnpx @11ty/eleventy",
-    "debugstart": "DEBUG=Eleventy* pnpx @11ty/eleventy --serve --quiet",
-    "benchmark": "DEBUG=Eleventy:Benchmark* pnpx @11ty/eleventy",
+    "build": "eleventy",
+    "start": "eleventy --serve --quiet",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "debugstart": "DEBUG=Eleventy* eleventy --serve --quiet",
+    "benchmark": "DEBUG=Eleventy:Benchmark* eleventy",
     "prepare": "husky"
   },
   "repository": {

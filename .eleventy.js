@@ -49,6 +49,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/");
   eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
+  eleventyConfig.addPassthroughCopy("./src/_redirects");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string

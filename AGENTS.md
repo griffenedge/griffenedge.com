@@ -35,3 +35,5 @@
 - Project layout: `src/_layouts/project.njk`
 - Includes: `src/_includes/`
 - Site data: `src/_data/metadata.json`
+- Cloudflare redirects source: `src/_redirects`
+- Cloudflare Pages settings: configured in Cloudflare dashboard (no repo config file)

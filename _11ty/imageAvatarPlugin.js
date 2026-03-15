@@ -10,5 +10,5 @@ export default function (eleventyConfig) {
     return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="60" height="60"${onerror ? ` onerror="${onerror}"` : ""} eleventy:ignore>`;
   }
 
-  eleventyConfig.addNunjucksShortcode("indieAvatar", indieAvatarHtml);
+  eleventyConfig.addShortcode("indieAvatar", indieAvatarHtml);
 }

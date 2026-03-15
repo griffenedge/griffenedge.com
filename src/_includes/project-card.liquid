@@ -1,24 +1,22 @@
 <article class="project-card">
   <figure>
-    {% if project in collections["featured-work"] %}
+    {% if collections['featured-work'] contains project %}
       <p class="project-card-statement">{{ project.data.statement }}</p>
     {% endif %}
     <img
       class="project-card-image"
       src="{{ project.data.logo.src }}"
       alt="{{ project.data.logo.alt }}"
-    />
+    >
     <figcaption>
       <h3
         class="project-card-title"
         style="view-transition-name: {{ project.data.title | slugify }}-title;"
       >
-        <a href="{{ project.url }}">{{- project.data.title -}} </a>
+        <a href="{{ project.url }}">{{- project.data.title -}}</a>
       </h3>
-      {% if project in collections["featured-work"] -%}
-        <small class="project-card-skills"
-          >{{- project.data.skills | join(", ") -}}</small
-        >
+      {% if collections['featured-work'] contains project -%}
+        <small class="project-card-skills">{{- project.data.skills | join: ', ' -}}</small>
       {% else %}
         <p class="project-card-tagline">{{ project.data.tagline }}</p>
       {% endif %}

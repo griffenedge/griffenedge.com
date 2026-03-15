@@ -1,5 +1,5 @@
 ---
-layout: project.njk
+layout: project.liquid
 title: Sydney Community College
 tagline: Online ethnography research
 statement: Overhauling a major adult education provider’s digital presence to compete with online-only alternatives.

@@ -1,5 +1,5 @@
 ---
-layout: project.njk
+layout: project.liquid
 title: Volunteering at Greenpeace
 tagline: Brand redesign concept
 theme: volunteering-at-greenpeace

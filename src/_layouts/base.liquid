@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {%- if title %}
+        {{ title }}
+        {%- if tagline %}
+          : {{ tagline }}
+        {%- endif %}
+        |
+      {% endif %}
+      {{ metadata.title }}
+      -
+      {{ metadata.tagline -}}
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..800;1,400..800&display=swap"
+    >
+    <link rel="stylesheet" href="/main.css">
+    <meta
+      name="description"
+      content="{{ description | default: metadata.description }}"
+    >
+    <meta
+      property="og:title"
+      content="
+        {%- if title %}
+          {{ title }}{%- if tagline %}: {{ tagline }}{%- endif %}
+        {% else %}
+          {{ metadata.title }}
+          - {{ metadata.tagline -}}
+        {%- endif %}
+      "
+    >
+    <meta
+      property="og:description"
+      content="{{ description | default: metadata.description }}"
+    >
+    <meta
+      property="og:image"
+      content="{{ metadata.url }}{{ social.img.src | default: metadata.social.img.src }}"
+    >
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ metadata.title }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@griffenedge">
+    <meta name="theme-color" content="#ff4f00">
+    <link rel="icon" href="/favicon.ico">
+    <link
+      rel="apple-touch-icon"
+      href="/assets/images/icons/apple-touch-icon.png"
+    >
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="generator" content="{{ eleventy.generator }}">
+  </head>
+
+  <body>
+    <a class="skip-to-content" href="#main-content" role="button"> Skip to main content </a>
+
+    {% include 'header.liquid' %}
+
+    <main
+      {% if title %}
+        class="{{ title | slugify }}"
+      {% endif %}
+      id="main-content"
+    >
+      <div class="container master-grid">{{ content }}</div>
+    </main>
+
+    {% include 'footer.liquid' %}
+
+    <script src="/main.js"></script>
+  </body>
+</html>

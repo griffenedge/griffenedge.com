@@ -29,6 +29,12 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginImageAvatar);
 
+  // Keep Liquid includes compatible with existing relative include paths.
+  eleventyConfig.setLiquidOptions({
+    relativeReference: true,
+    root: ["./src/_includes", "./src", "./node_modules"],
+  });
+
   eleventyConfig.addShortcode(
     "currentyear",
     () => `${new Date().getFullYear()}`,
@@ -56,9 +62,17 @@ export default function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  // Build absolute URLs for sitemap and social metadata usage.
+  eleventyConfig.addFilter("absoluteUrl", (url, base) => {
+    if (!url) {
+      return base;
+    }
+    return new URL(url, base).toString();
+  });
+
   // Return Config object
   return {
     dir: { input: "src", output: "dist", layouts: "_layouts" },
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: "liquid",
   };
 }

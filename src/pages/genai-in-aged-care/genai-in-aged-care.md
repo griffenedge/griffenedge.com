@@ -1,5 +1,5 @@
 ---
-layout: project.njk
+layout: project.liquid
 title: GenAI in Aged Care
 tagline: Research & discovery, ideation, co-design
 statement: Identifying aged care staff pain points and validating GenAI use cases to solve them for leading aged care providers.

@@ -8,8 +8,8 @@
 
 ## Stack
 
-- Templating: Nunjucks (`.njk`) and Markdown (`.md`) via Eleventy.
-- Styling: `src/assets/css/main-css.njk` composes Pico CSS + local styles into `main.css`.
+- Templating: Liquid (`.liquid`) and Markdown (`.md`) via Eleventy.
+- Styling: `src/assets/css/main-css.liquid` composes Pico CSS + local styles into `main.css`.
 - Scripts: `src/assets/js/main.js.liquid` outputs `main.js`.
 - Package manager: `pnpm` (lockfile is `pnpm-lock.yaml`).
 
@@ -31,8 +31,8 @@
 ## Common Paths
 
 - Eleventy config: `.eleventy.js`
-- Base layout: `src/_layouts/base.njk`
-- Project layout: `src/_layouts/project.njk`
+- Base layout: `src/_layouts/base.liquid`
+- Project layout: `src/_layouts/project.liquid`
 - Includes: `src/_includes/`
 - Site data: `src/_data/metadata.json`
 - Cloudflare redirects source: `src/_redirects`

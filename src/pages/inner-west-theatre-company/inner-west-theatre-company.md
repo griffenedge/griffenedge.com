@@ -1,5 +1,5 @@
 ---
-layout: project.njk
+layout: project.liquid
 title: Inner West Theatre Company
 tagline: Community theatre volunteering
 theme: canterbury-theatre-guild
@@ -24,6 +24,6 @@ I have been on the committee at Inner West Theatre Company since 2015 and have b
 
 <ul class="projects">
   {%- for project in collections["canterbury-theatre-guild-project"] | reverse -%}
-    {% include "project-card.njk" %}
+    {% include "project-card.liquid" %}
   {%- endfor -%}
 </ul>

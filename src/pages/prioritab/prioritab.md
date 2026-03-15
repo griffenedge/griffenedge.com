@@ -1,5 +1,5 @@
 ---
-layout: project.njk
+layout: project.liquid
 title: Prioritab
 tagline: Productivity-focusing browser extension
 theme: prioritab

@@ -1,5 +1,5 @@
 ---
-layout: project.njk
+layout: project.liquid
 title: ABS Business Reporting
 tagline: Research & discovery, ideation, co-design
 statement: Refining a government agency web app to prepare for wide-scale rollout.

@@ -1,5 +1,5 @@
 ---
-layout: project.njk
+layout: project.liquid
 title: Pledge & Protect
 tagline: COVID community mapping concept
 description: Pledge & Protect is a community mapping of loved ones that need to be protected from COVID-19 and people who pledge to practice COVID-safe behaviours.

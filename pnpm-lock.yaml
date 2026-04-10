@@ -37,9 +37,6 @@ importers:
       prettier:
         specifier: ^3.8.1
         version: 3.8.1
-      prettier-plugin-jinja-template:
-        specifier: ^2.1.0
-        version: 2.1.0(prettier@3.8.1)
       stylelint:
         specifier: ^16.26.1
         version: 16.26.1
@@ -1964,14 +1961,6 @@ packages:
       }
     engines: { node: ">=12.0.0" }
 
-  prettier-plugin-jinja-template@2.1.0:
-    resolution:
-      {
-        integrity: sha512-mzoCp2Oy9BDSug80fw3B3J4n4KQj1hRvoQOL1akqcDKBb5nvYxrik9zUEDs4AEJ6nK7QDTGoH0y9rx7AlnQ78Q==,
-      }
-    peerDependencies:
-      prettier: ^3.0.0
-
   prettier@3.8.1:
     resolution:
       {
@@ -3464,10 +3453,6 @@ snapshots:
     dependencies:
       posthtml-parser: 0.11.0
       posthtml-render: 3.0.0
-
-  prettier-plugin-jinja-template@2.1.0(prettier@3.8.1):
-    dependencies:
-      prettier: 3.8.1
 
   prettier@3.8.1: {}
 

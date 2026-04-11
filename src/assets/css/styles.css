@@ -176,16 +176,16 @@ details.dropdown {
 
   position: relative;
   height: fit-content;
-  transition: transform 300ms;
   border: 1px solid var(--pico-muted-border-color);
+  transition: scale var(--pico-transition);
 }
 
 .project-card:hover {
-  transform: scale(101%);
+  scale: 101%;
 }
 
 .project-card:active {
-  transform: scale(99%);
+  scale: 99%;
 }
 
 .project-card img {

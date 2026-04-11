@@ -1,3 +1,8 @@
+:root,
+:host {
+  --pico-transition: 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
 [data-theme="light"],
 :root:not([data-theme="dark"]),
 :host(:not([data-theme="dark"])) {

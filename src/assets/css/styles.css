@@ -176,8 +176,8 @@ details.dropdown {
 
   position: relative;
   height: fit-content;
-  border: 1px solid hsl(0deg 0% 100% / 1%);
   transition: transform 300ms;
+  border: 1px solid var(--pico-muted-border-color);
 }
 
 .project-card:hover {

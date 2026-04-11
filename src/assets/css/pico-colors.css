@@ -7,7 +7,7 @@
   --pico-color: oklch(35.31% 0.016 37.42deg);
   --pico-text-selection-color: oklch(66.81% 0.1961 37.42deg / 25%);
   --pico-muted-color: oklch(52.32% 0.0247 37.42deg);
-  --pico-muted-border-color: oklch(93.63% 0.0081 37.42deg);
+  --pico-muted-border-color: oklch(26.4% 0.1023 35.7deg / 10%);
   --pico-primary: oklch(54.04% 0.1745 37.42deg);
   --pico-primary-background: oklch(58.53% 0.1876 37.42deg);
   --pico-primary-border: var(--pico-primary-background);

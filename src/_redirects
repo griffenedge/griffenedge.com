@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects
+# Format: /source /destination [status]
+
+/projects/canterburytheatreguild/avenueq/* /canterbury-theatre-guild/avenue-q/:splat 301
+/projects/canterburytheatreguild/steelmagnolias/* /canterbury-theatre-guild/steel-magnolias/:splat 301
+/projects/canterburytheatreguild/littlemermaid/* /canterbury-theatre-guild/little-mermaid/:splat 301
+/projects/canterburytheatreguild/9to5/* /canterbury-theatre-guild/9-to-5/:splat 301
+/projects/canterburytheatreguild/* /canterbury-theatre-guild/:splat 301
+/projects/guitardiy/* /guitar-diy/:splat 301
+/projects/sydneysecondarycollege/* /sydney-secondary-college/:splat 301
+/projects/volunteeringatgreenpeace/* /volunteering-at-greenpeace/:splat 301
+/projects/* /:splat 301

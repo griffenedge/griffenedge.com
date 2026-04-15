@@ -1,0 +1,283 @@
+:host,
+:root {
+  --font-text: "Alegreya Sans", system-ui, sans-serif;
+  --font-display: "Alegreya", "Alegreya Sans", serif;
+  --pico-font-family: var(--font-text);
+
+  text-wrap-style: pretty;
+}
+
+/* :host(:not([data-theme="dark"])),
+:root:not([data-theme="dark"]),
+[data-theme="light"] {
+  --pico-background-color: hsl(19deg 100% 96%);
+  --pico-color: from var(--pico-color) 15deg s l / a;
+  --pico-h1-color: hsl(15deg 11% 20%);
+  --pico-h2-color: hsl(15deg 11% 24%);
+  --pico-h3-color: hsl(15deg 10% 29%);
+  --pico-h4-color: hsl(15deg 10% 34%);
+  --pico-h5-color: hsl(15deg 10% 40%);
+  --pico-h6-color: hsl(15deg 10% 43%);
+  --pico-secondary: hsl(15deg 19% 45%);
+  --pico-secondary-background: hsl(15deg 20% 40%);
+  --pico-secondary-underline: hsl(15deg 19% 45% / 50%);
+  --pico-secondary-hover: hsl(15deg 20% 35%);
+  --pico-secondary-hover-background: hsl(15deg 20% 35%);
+  --pico-secondary-focus: hsl(15deg 19% 45% / 25%);
+  --pico-muted-color: hsl(15deg 10% 43%);
+  --pico-muted-border-color: hsl(15deg 23% 92%);
+  --pico-muted-border-color: hsl(
+    from var(--pico-muted-border-color) 15deg s l / a
+  );
+}
+
+[data-theme="dark"] {
+  --pico-background-color: hsl(15deg 24% 10%);
+  --pico-color: hsl(from var(--pico-color) 15 s l / a);
+  --pico-h1-color: hsl(15deg 11% 95%);
+  --pico-h2-color: hsl(15deg 13% 89%);
+  --pico-h3-color: hsl(15deg 13% 79%);
+  --pico-h4-color: hsl(15deg 13% 74%);
+  --pico-h5-color: hsl(15deg 14% 69%);
+  --pico-h6-color: hsl(15deg 13% 59%);
+  --pico-secondary: hsl(15deg 14% 64%);
+  --pico-secondary-background: hsl(15deg 20% 40%);
+  --pico-secondary-underline: hsl(15deg 14% 64% / 50%);
+  --pico-secondary-hover: hsl(15deg 13% 74%);
+  --pico-secondary-hover-background: hsl(15deg 19% 45%);
+  --pico-secondary-focus: hsl(15deg 26% 65% / 25%);
+  --pico-card-background-color: hsl(15deg 21% 12%);
+  --pico-dropdown-background-color: hsl(15deg 21% 12%);
+  --pico-dropdown-border-color: hsl(15deg 22% 16%);
+  --pico-muted-color: hsl(15deg 11% 53%);
+  --pico-muted-border-color: hsl(15deg 22% 16%);
+} */
+
+:target {
+  scroll-margin-block: 3rlh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  html {
+    interpolate-size: allow-keywords;
+
+    &:focus-within {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+/* main :where(address, blockquote, dl, ol, p, pre, ul, h1, h2, h3, h4, h5, h6) {
+  max-width: 66rch;
+  margin-inline: auto;
+} */
+
+nav {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav :where(a, [role="link"]):not(:hover) {
+  text-decoration: none;
+}
+
+.nav-brand {
+  font-family: var(--font-display);
+  font-weight: bold;
+}
+
+footer {
+  --pico-block-spacing-vertical: 2rem;
+}
+
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: baseline;
+  padding-inline: 0;
+}
+
+.list-inline li {
+  list-style-type: none;
+}
+
+details.dropdown {
+  margin-block-end: 0;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: calc(var(--pico-spacing) * 0.75);
+  left: calc(var(--pico-spacing) * 0.75);
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-1000%);
+
+  --pico-box-shadow: var(--pico-card-box-shadow);
+}
+
+.skip-to-content:focus {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.intro-section {
+  place-self: center;
+  max-inline-size: 66ch;
+}
+
+.intro-section-media {
+  float: right;
+  width: clamp(6rem, 33%, 12rem);
+  margin-inline-start: 1rem;
+  border: 1px solid hsl(0deg 0% 100% / 10%);
+  border-radius: 9999px;
+}
+
+.about-section {
+  columns: 2 40ch;
+
+  & h2 {
+    column-span: all;
+  }
+}
+
+.inline-avatar {
+  display: inline;
+  width: 1em;
+  height: 1em;
+  margin-inline: 0.15em;
+  vertical-align: middle;
+  border-radius: 20%;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+  column-gap: var(--pico-block-spacing-horizontal);
+}
+
+.project-card {
+  --pico-border-radius: 2rem;
+
+  position: relative;
+  height: fit-content;
+  border: 1px solid var(--pico-muted-border-color);
+  transition: scale var(--pico-transition);
+}
+
+.project-card:hover {
+  scale: 101%;
+}
+
+.project-card:active {
+  scale: 99%;
+}
+
+.project-card img {
+  margin-block-end: var(--pico-block-spacing-vertical);
+  border-radius: calc(
+    var(--pico-border-radius) - var(--pico-block-spacing-horizontal)
+  );
+}
+
+.project-card figcaption {
+  padding: 0;
+}
+
+.project-card figcaption :last-child {
+  margin-block-end: 0;
+}
+
+.project-card-statement {
+  --pico-font-weight: bold;
+
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.project-card a::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+  gap: var(--pico-block-spacing-horizontal);
+}
+
+.master-grid {
+  --calculated-master-grid-padding-inline: var(
+    --master-grid-padding-inline,
+    var(--pico-spacing)
+  );
+  --calculated-master-grid-content-max-width: var(
+    --master-grid-content-max-width,
+    75ch
+  );
+  --calculated-master-grid-popout-extra-distance: var(
+    --master-grid-popout-extra-distance,
+    calc(var(--padding-inline) * 1.5)
+  );
+  --calculated-master-grid-consistent-vertical-space: var(
+    --master-grid-consistent-vertical-space,
+    var(--pico-spacing)
+  );
+  --padding-inline: var(--calculated-master-grid-padding-inline);
+  --content-max-width: var(--calculated-master-grid-content-max-width);
+  --popout-extra-distance: var(--calculated-master-grid-popout-extra-distance);
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inline), 1fr)
+    [popout-start] minmax(0, var(--popout-extra-distance))
+    [content-start] min(
+      var(--content-max-width),
+      100% - var(--padding-inline) * 2
+    )
+    [content-end] minmax(0, var(--popout-extra-distance)) [popout-end] minmax(
+      var(--padding-inline),
+      1fr
+    )
+    [full-width-end];
+}
+
+.master-grid > * {
+  grid-column: content;
+}
+
+.master-grid > figure,
+.master-grid > hr,
+.master-grid > picture,
+.master-grid > p:has(img) {
+  grid-column: popout;
+}
+
+.screenshot {
+  margin-block-end: 1lh;
+  border-radius: var(--pico-border-radius);
+  box-shadow: var(--pico-box-shadow);
+}
+
+.youtube-embed {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}

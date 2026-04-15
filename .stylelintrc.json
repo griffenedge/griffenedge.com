@@ -1,7 +1,7 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "ignoreFiles": ["src/assets/css/legacy.css"],
   "rules": {
-    "font-family-name-quotes": "always-unless-keyword",
     "selector-class-pattern": null
   }
 }

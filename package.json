@@ -2,12 +2,13 @@
   "name": "griffenedge.com",
   "description": "Personal website of @griffenedge",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "pnpx @11ty/eleventy",
-    "start": "pnpx @11ty/eleventy --serve --quiet",
-    "debug": "DEBUG=Eleventy* pnpx @11ty/eleventy",
-    "debugstart": "DEBUG=Eleventy* pnpx @11ty/eleventy --serve --quiet",
-    "benchmark": "DEBUG=Eleventy:Benchmark* pnpx @11ty/eleventy",
+    "build": "eleventy",
+    "start": "eleventy --serve --quiet",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "debugstart": "DEBUG=Eleventy* eleventy --serve --quiet",
+    "benchmark": "DEBUG=Eleventy:Benchmark* eleventy",
     "prepare": "husky"
   },
   "repository": {
@@ -27,16 +28,18 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
-    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@picocss/pico": "^2.1.1",
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.2",
+    "lint-staged": "^15.5.2",
     "luxon": "^3.7.2",
     "prettier": "^3.8.1",
-    "prettier-plugin-jinja-template": "^2.1.0",
-    "stylelint": "^17.4.0",
+    "stylelint": "^16.26.1",
     "stylelint-config-recess-order": "^7.6.1",
-    "stylelint-config-standard": "^40.0.0"
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-plugin-defensive-css": "^1.1.1"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

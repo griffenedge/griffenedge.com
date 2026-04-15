@@ -1,0 +1,13 @@
+---
+permalink: "/sitemap.xml"
+eleventyExcludeFromCollections: true
+---
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- for page in collections.all %}
+    {% capture absoluteUrl %}{{ page.url | url | absoluteUrl: metadata.url }}{% endcapture %}
+    <url>
+      <loc>{{ absoluteUrl }}</loc>
+      <lastmod>{{ page.date | htmlDateString }}</lastmod>
+    </url>
+  {%- endfor %}
+</urlset>

@@ -42,10 +42,13 @@ importers:
         version: 17.8.0
       stylelint-config-recess-order:
         specifier: ^7.7.0
-        version: 7.7.0(stylelint-order@7.0.0(stylelint@17.8.0))(stylelint@17.8.0)
+        version: 7.7.0(stylelint-order@8.1.1(stylelint@17.8.0))(stylelint@17.8.0)
       stylelint-config-standard:
         specifier: ^40.0.0
         version: 40.0.0(stylelint@17.8.0)
+      stylelint-order:
+        specifier: 8.1.1
+        version: 8.1.1(stylelint@17.8.0)
       stylelint-plugin-defensive-css:
         specifier: ^2.9.1
         version: 2.9.1(stylelint@17.8.0)
@@ -1774,10 +1777,10 @@ packages:
       }
     engines: { node: ">=4" }
 
-  postcss-sorting@9.1.0:
+  postcss-sorting@10.0.0:
     resolution:
       {
-        integrity: sha512-Mn8KJ45HNNG6JBpBizXcyf6LqY/qyqetGcou/nprDnFwBFBLGj0j/sNKV2lj2KMOVOwdXu14aEzqJv8CIV6e8g==,
+        integrity: sha512-TXbU+h6vVRW+86c/+ewhWq9k7pr7ijASTnepVhCQiC87zAOTkvB1v2dHyWP+ggstSTX/PNvjzS+IOqzejndz9w==,
       }
     peerDependencies:
       postcss: ^8.4.20
@@ -2118,14 +2121,14 @@ packages:
     peerDependencies:
       stylelint: ^17.0.0
 
-  stylelint-order@7.0.0:
+  stylelint-order@8.1.1:
     resolution:
       {
-        integrity: sha512-rSWxx0KscYfxU02wEskKXES9lkRzuuONMMNkZ7SUc6uiF3tDKm7e+sE0Ax/SBlG4TUf1sp1R6f3/SlsPGmzthg==,
+        integrity: sha512-LqsEB6VggJuu5v10RtkrQsBObcdwBE7GuAOlwfc/LR3VL/w8UqKX2BOLIjhyGt0Gne/njo7gRNGiJAKhfmPMNw==,
       }
     engines: { node: ">=20.19.0" }
     peerDependencies:
-      stylelint: ^16.18.0
+      stylelint: ^16.18.0 || ^17.0.0
 
   stylelint-plugin-defensive-css@2.9.1:
     resolution:
@@ -3212,7 +3215,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sorting@9.1.0(postcss@8.5.10):
+  postcss-sorting@10.0.0(postcss@8.5.10):
     dependencies:
       postcss: 8.5.10
 
@@ -3400,10 +3403,10 @@ snapshots:
 
   strip-bom-string@1.0.0: {}
 
-  stylelint-config-recess-order@7.7.0(stylelint-order@7.0.0(stylelint@17.8.0))(stylelint@17.8.0):
+  stylelint-config-recess-order@7.7.0(stylelint-order@8.1.1(stylelint@17.8.0))(stylelint@17.8.0):
     dependencies:
       stylelint: 17.8.0
-      stylelint-order: 7.0.0(stylelint@17.8.0)
+      stylelint-order: 8.1.1(stylelint@17.8.0)
 
   stylelint-config-recommended@18.0.0(stylelint@17.8.0):
     dependencies:
@@ -3414,10 +3417,10 @@ snapshots:
       stylelint: 17.8.0
       stylelint-config-recommended: 18.0.0(stylelint@17.8.0)
 
-  stylelint-order@7.0.0(stylelint@17.8.0):
+  stylelint-order@8.1.1(stylelint@17.8.0):
     dependencies:
       postcss: 8.5.10
-      postcss-sorting: 9.1.0(postcss@8.5.10)
+      postcss-sorting: 10.0.0(postcss@8.5.10)
       stylelint: 17.8.0
 
   stylelint-plugin-defensive-css@2.9.1(stylelint@17.8.0):

@@ -11,7 +11,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginNavigation);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     widths: [510, 700, 950, 1200, 1450, 1920, 2560],
-    formats: ["avif", "webp", "jpeg", "svg"],
+    formats: ["webp", "jpeg", "svg"],
     filenameFormat: function (src, width, format) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);

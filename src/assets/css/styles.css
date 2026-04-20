@@ -189,6 +189,7 @@ details.dropdown {
 }
 
 .project-card img {
+  width: 100%;
   margin-block-end: var(--pico-block-spacing-vertical);
   border-radius: calc(
     var(--pico-border-radius) - var(--pico-block-spacing-horizontal)

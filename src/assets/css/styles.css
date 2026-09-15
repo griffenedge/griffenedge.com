@@ -1,7 +1,7 @@
 :host,
 :root {
-  --font-text: "Alegreya Sans", system-ui, sans-serif;
-  --font-display: "Alegreya", "Alegreya Sans", serif;
+  --font-text: "Inclusive Sans", sans-serif;
+  --font-display: "Platypi", serif;
   --pico-font-family: var(--font-text);
 
   text-wrap-style: pretty;

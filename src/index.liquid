@@ -7,13 +7,14 @@ layout: base.liquid
     src="/assets/images/griffen-edge-2024.jpg"
     alt="Griffen's smiling bespectacled face"
   >
-  <h1 class="intro-section-heading">
-    <strong>Hey there, I'm Griffen</strong>, a user experience designer who creates accessible and inclusive solutions
-    that empower everyday people.
-  </h1>
+  <h1 class="intro-section-heading">Your friendly neighbourhood UX designer</h1>
   <p>
-    I'm a UX Designer with experience across education, government, health & aged care, and insurance. Currently open to
-    new opportunities.
+    <strong>Hey there, I'm Griffen</strong>, a user experience designer who creates accessible and inclusive solutions
+    that empower everyday people. I'm a Product Designer at the
+    <a href="https://www.afca.org.au/">
+      {% indieAvatar "https://www.afca.org.au/" %}Australian Financial Complaints Authority (AFCA)</a
+    >, where I'm helping to improve the dispute resolution experience for consumers, small businessses, and financial
+    firms.
   </p>
 </section>
 
@@ -29,47 +30,61 @@ layout: base.liquid
 <section class="about-section" id="about">
   <h2>About Griffen</h2>
   <p>
-    Griffen Edge is a user experience designer from Sydney, Australia looking to collaborate with innovative teams to
-    create exceptional user experiences that empower everyday people.
+    Griffen Edge is a user experience designer from Sydney, Australia who collaborates with innovative teams to create
+    exceptional experiences that empower everyday people.
   </p>
   <p>
-    Most recently he worked at
-    <a href="https://www.ssw.com.au/"> {% indieAvatar "https://www.ssw.com.au/" %} SSW Australia</a>, where he worked on
+    Currently a Product Designer at the
+    <a href="https://www.afca.org.au/">
+      {% indieAvatar "https://www.afca.org.au/" %}Australian Financial Complaints Authority (AFCA)</a
+    >
+    where he's working to improve the financial dispute resolution experience for consumers, small businesses, and
+    financial firms. He's also lucky enough to help build the user experience for the world's first scams ombudsman
+    service.
+    <p>
+     <p>He previously worked at
+    <a href="https://www.ssw.com.au/">
+      {% indieAvatar "https://www.ssw.com.au/" %}SSW Australia</a>, where he worked on                      
     developing a company-wide design system and uplifting the UX of SSW's enterprise products, including the popular
-    open-source <a href="https://tina.io/">{% indieAvatar "https://tina.io/" %} TinaCMS</a>.
+    open-source
+    <a href="https://tina.io/">{% indieAvatar "https://tina.io/" %}TinaCMS</a>.                      
 
     Before that he worked at
-    <a href="https://www.avanade.com/"> {% indieAvatar "https://www.avanade.com/" %} Avanade </a>
-    as an Experience Design Consultant to clients across Government, Health & Aged Care, and Insurance. Prior to that he
+    <a href="https://www.avanade.com/">
+      {% indieAvatar "https://www.avanade.com/" %}Avanade
+    </a>
+    as an Experience Design Consultant to clients across Government, Health & Aged Care, and Insurance. Prior to that he                      
     was the Digital Officer at
     <a href="https://www.sydneycommunitycollege.edu.au/">
-      {% indieAvatar "https://www.sydneycommunitycollege.edu.au/" %} Sydney Community College
+      {% indieAvatar "https://www.sydneycommunitycollege.edu.au/" %}Sydney Community College
     </a>
     where he spearheaded a major website redesign and developed a customer membership program.
   </p>
   <p>
     He studied a Bachelor of Design Computing at the
-    <a href="https://www.sydney.edu.au/"> {% indieAvatar "https://www.sydney.edu.au/" %} University of Sydney </a>
+    <a href="https://www.sydney.edu.au/">
+      {% indieAvatar "https://www.sydney.edu.au/" %}University of Sydney
+    </a>
     . While there, he fostered an inclusive community of UX design students and alumni as the President of the
     <a href="https://www.suede.org.au/">
-      {% indieAvatar "https://www.suede.org.au/" %} Sydney University Experience Designers</a
-    >.
+      {% indieAvatar "https://www.suede.org.au/" %}Sydney University Experience Designers</a>.
   </p>
   <p>
     He has been on the committee at
     <a href="https://www.innerwesttheatre.com.au/">
-      {% indieAvatar "https://www.innerwesttheatre.com.au/" %} Inner West Theatre Company
+      {% indieAvatar "https://www.innerwesttheatre.com.au/" %}Inner West Theatre Company
     </a>
-    (formerly Canterbury Theatre Guild) for almost a decade, helping to promote the performing arts to the community, as
-    well as providing a pair of hands backstage from time to time.
+    (formerly Canterbury Theatre Guild) for over a decade, helping to promote the performing arts to the community. He                      
+    also provides a pair of hands backstage or shares the spotlight onstage from time to time.
   </p>
 </section>
 
-<section id="other-work">
-  <h2>Other work</h2>
-  <div class="projects">
-    {%- for project in collections["other-work"] | reverse -%}
-      {% include 'project-card.liquid' %}
-    {%- endfor -%}
-  </div>
-</section>
+
+    <section id="other-work">
+      <h2>Other work</h2>
+      <div class="projects">
+        {%- for project in collections["other-work"] | reverse -%}
+          {% include 'project-card.liquid' %}
+        {%- endfor -%}
+      </div>
+    </section>
